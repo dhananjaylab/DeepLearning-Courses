@@ -1,0 +1,4723 @@
+{
+  "version": {
+    "_version": 12,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [],
+    "components": [],
+    "creatorID": 70616,
+    "manualSave": false,
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [
+        {
+          "key": "674f39baa43a5f88550f6529",
+          "name": "Meeting_time",
+          "color": "#515A63",
+          "inputs": [],
+          "type": {
+            "value": "VF.DATETIME"
+          }
+        },
+        {
+          "key": "674f39c7a43a5f88550f6531",
+          "name": "Person_to_meet",
+          "color": "#CB627B",
+          "inputs": [],
+          "type": {
+            "value": "VF.NAME"
+          }
+        }
+      ],
+      "intents": [
+        {
+          "key": "66e9f738cc90326d546e9b63",
+          "name": "Submit a ticket",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Need help with submitting a ticket",
+              "slots": []
+            },
+            {
+              "text": "Is there a way to submit a ticket?",
+              "slots": []
+            },
+            {
+              "text": "I want to create a ticket",
+              "slots": []
+            },
+            {
+              "text": "Need help with submitting a ticket",
+              "slots": []
+            },
+            {
+              "text": "How do I submit a ticket?",
+              "slots": []
+            },
+            {
+              "text": "Create a ticket",
+              "slots": []
+            },
+            {
+              "text": "Submit a ticket",
+              "slots": []
+            }
+          ],
+          "noteID": "eq32c0qp3",
+          "description": "Trigger this intent when the user is asking to submit a ticket or report a bug."
+        },
+        {
+          "key": "VF.YES",
+          "name": "VF.YES",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Of course",
+              "slots": []
+            },
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "You bet",
+              "slots": []
+            },
+            {
+              "text": "Okay",
+              "slots": []
+            },
+            {
+              "text": "Sure",
+              "slots": []
+            },
+            {
+              "text": "Yes",
+              "slots": []
+            },
+            {
+              "text": "Certainly",
+              "slots": []
+            },
+            {
+              "text": "Absolutely",
+              "slots": []
+            }
+          ],
+          "noteID": "eq32d0q4v",
+          "description": "Trigger this intent when the user says yes, or responds in the affirmative."
+        },
+        {
+          "key": "VF.NO",
+          "name": "VF.NO",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Negative",
+              "slots": []
+            },
+            {
+              "text": "Absolutely not",
+              "slots": []
+            },
+            {
+              "text": "I'm afraid not",
+              "slots": []
+            },
+            {
+              "text": "No way",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "No",
+              "slots": []
+            }
+          ],
+          "noteID": "eq32e0q1b",
+          "description": "Trigger this intent when the user says no, or responds in the negative."
+        },
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "66e999d72d5420af16162e99",
+          "name": "Book a Meeting",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Book a meeting",
+              "slots": []
+            },
+            {
+              "text": "I want to meet my team",
+              "slots": []
+            },
+            {
+              "text": "Book a one on one",
+              "slots": []
+            },
+            {
+              "text": "Schedule a meeting with the sales team",
+              "slots": []
+            },
+            {
+              "text": "I need to set up a one on one with my manager",
+              "slots": []
+            },
+            {
+              "text": "Book a conference call for next Monday",
+              "slots": []
+            },
+            {
+              "text": "Can you help me organize a meeting with the project stakeholders?",
+              "slots": []
+            },
+            {
+              "text": "I'd like to arrange a meeting to discuss the new project",
+              "slots": []
+            }
+          ],
+          "noteID": "eq32f0q5b",
+          "description": "Trigger this intent when the user wants to explicitly book a demo with someone on their team.\n\nDo not trigger when a custom is asking general questions like 'what can you do'"
+        },
+        {
+          "key": "674f3ad6a43a5f88550f66ad",
+          "name": "Reflection",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Record a journal entry",
+              "slots": []
+            },
+            {
+              "text": "Reflection for the day",
+              "slots": []
+            },
+            {
+              "text": "I'm feeling better",
+              "slots": []
+            },
+            {
+              "text": "I'm feeling nervous after my current day",
+              "slots": []
+            }
+          ],
+          "noteID": "eq32g0qr4",
+          "description": "Trigger this intent when the user is wants to reflect on their day."
+        },
+        {
+          "key": "674f3ccca43a5f88550f6c10",
+          "name": "Recommend Ideas",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Recommend ideas",
+              "slots": []
+            },
+            {
+              "text": "I need some help brainstorming",
+              "slots": []
+            },
+            {
+              "text": "Help me brainstorm",
+              "slots": []
+            }
+          ],
+          "noteID": "eq32h0qti",
+          "description": "Trigger when the user is looking for new ideas"
+        },
+        {
+          "key": "674f3df0a43a5f88550f6e00",
+          "name": "Save an idea",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Save an idea",
+              "slots": []
+            },
+            {
+              "text": "Can you log this idea",
+              "slots": []
+            },
+            {
+              "text": "Oh I have an idea",
+              "slots": []
+            },
+            {
+              "text": "Write down this idea",
+              "slots": []
+            },
+            {
+              "text": "Idea, workfrom home fridays",
+              "slots": []
+            },
+            {
+              "text": "Add fruit to the cafeteria",
+              "slots": []
+            }
+          ],
+          "noteID": "eq32i0qe3",
+          "description": "Trigger when the user wants to save an idea"
+        },
+        {
+          "key": "674f4625a43a5f88550f7862",
+          "name": "Current tasks",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "I want to see a list of my current tasks",
+              "slots": []
+            },
+            {
+              "text": "Show me my outstanding tasks",
+              "slots": []
+            },
+            {
+              "text": "I need to know my tasks for today",
+              "slots": []
+            },
+            {
+              "text": "Can you show me what I need to work on?",
+              "slots": []
+            },
+            {
+              "text": "List my ongoing tasks",
+              "slots": []
+            },
+            {
+              "text": "Display my to-do list",
+              "slots": []
+            },
+            {
+              "text": "What are my pending tasks?",
+              "slots": []
+            }
+          ],
+          "noteID": "eq32j0qv7",
+          "description": "Trigger when the user wants to see a list of their current tasks"
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "globalNoMatch": {
+          "type": "static",
+          "prompt": {
+            "id": "cm1729z6g01ya3b7xmgnv5yop",
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Sorry, I didn’t get that. Please try again."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "messageDelay": {
+          "durationMilliseconds": 500
+        },
+        "defaultVoice": "Alexa"
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#397DFF",
+        "description": "Hi, how can I help you today?",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Your AI agent",
+        "watermark": true,
+        "audioInterface": true
+      },
+      "platform": "webchat"
+    },
+    "programResources": {
+      "messages": {
+        "674f6005a43a5f88550f8e4e": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Anything else I can help with?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "674f431fa43a5f88550f760d": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hey I'm your onboarding coach, what can I help you with today?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      },
+      "prompts": {
+        "672ae903671f984162a8aa3a": {
+          "settings": {
+            "model": "gpt-4o-mini",
+            "maxTokens": 256,
+            "temperature": 0.3
+          },
+          "system": "You are an expert AI assistant trained to analyze customer inquiries and determine if they require clarification. Your role is to ensure efficient and accurate responses by identifying when additional information is needed from the customer.",
+          "messages": [
+            {
+              "content": "# Clarification Assessment Prompt Template\n\nYou are an expert AI assistant trained to analyze customer inquiries and determine if they require clarification. Your role is to ensure efficient and accurate responses by identifying when additional information is needed from the customer.\n\n## Instructions:\n1. Carefully analyze the 'user's question' for specific details such as product or service types, policy names, or other relevant specifics that provide clear context.\n2. Review the 'chunks' to see if they contain information that directly addresses the specific details in the user's question.\n3. Output '~' if:\n   - The user's question contains specific details that are clearly addressed in the 'chunks'.\n   - The query aligns well with a specific part of the 'chunks' that provides a comprehensive answer.\n4. Output '#' only if:\n   - The query is genuinely broad or vague, lacking specific details that would allow for a direct answer from the 'chunks'.\n   - The 'chunks' contain multiple categories or types of information that could potentially answer the question, but the user's intent is unclear.\n   - There's a crucial piece of information missing from the user's question that is necessary to provide an accurate answer, and this information is not implied or obvious from the context given.\n5. If outputting '#', specify the type of information or category that would help better address their question, based on the 'chunks'.\n\n## Output format:\n[Decision: '~' or '#', (if '#') then clarification is required. Specify the type of information or category that would help better address their question.]\n\n## Important:\n- Focus on whether the available information in the chunks is sufficient to answer the user's specific question accurately.\n- Consider whether the user's question is too broad or vague to be answered comprehensively with the information provided in the chunks.\n- Assess if there are multiple possible interpretations of the user's question that would lead to significantly different answers based on the information in the chunks.\n\n## Input data:\n1. User's question: \n{last_utterance}\n\n  2. Chunks: \n{chunks}\n\nNow, take a deep breath and provide your assessment based on the instructions above.",
+              "role": "user"
+            }
+          ]
+        },
+        "674f382ca4f2504f702d3520": {
+          "settings": {
+            "model": "claude-3-haiku",
+            "maxTokens": 256,
+            "temperature": 0.3
+          },
+          "system": "",
+          "messages": [
+            {
+              "content": "",
+              "role": "user"
+            }
+          ]
+        },
+        "672ae961671f984162a8aa46": {
+          "settings": {
+            "model": "gpt-3.5-turbo",
+            "maxTokens": 256,
+            "temperature": 0.3
+          },
+          "system": "You are a language classifier",
+          "messages": [
+            {
+              "content": "Analyze the conversation history and the last utterance from a user to determine their likely language. Consider the previously determined language, if available.\n\nClassify the user's language into a specific language name (e.g., English, French, Spanish) or \"unknown\" if the language cannot be determined.\n\nRespond with a JSON string containing the classification, confidence level (high, medium, or low), and a brief explanation of your reasoning. \n\nJSON structure format:\n\n{\n  \"language\": string,\n  \"confidence\": string,\n  \"reasoning\": string\n}\n\n\nExample:\n\nUser: \"How much does it cost to use your service?\"",
+              "role": "user"
+            },
+            {
+              "content": "{\"language\": \"English\", \"confidence\": \"high\", \"reasoning\": \"The utterance is in clear, grammatically correct English.\"}",
+              "role": "assistant"
+            },
+            {
+              "content": "Combien coûte votre service ?",
+              "role": "user"
+            },
+            {
+              "content": "{\"language\": \"French\", \"confidence\": \"high\", \"reasoning\": \"The utterance is in French, using correct French grammar and vocabulary.\"}",
+              "role": "assistant"
+            },
+            {
+              "content": "¿Cuál es el precio de su servicio?",
+              "role": "user"
+            },
+            {
+              "content": "{\"language\": \"Spanish\", \"confidence\": \"high\", \"reasoning\": \"The sentence is in Spanish, asking about the price of the service.\"}",
+              "role": "assistant"
+            },
+            {
+              "content": "Hello! Quel est le prix de votre service ?",
+              "role": "user"
+            },
+            {
+              "content": "{\"language\": \"French\", \"confidence\": \"medium\", \"reasoning\": \"While 'Hello' is English, the rest of the sentence is in French, indicating the user is primarily communicating in French.\"}",
+              "role": "assistant"
+            },
+            {
+              "content": "👍",
+              "role": "user"
+            },
+            {
+              "content": "{\"language\": \"unknown\", \"confidence\": \"low\", \"reasoning\": \"The user only used an emoji, which is not specific to any language.\"}",
+              "role": "assistant"
+            },
+            {
+              "content": "What's the キャンセル policy?",
+              "role": "user"
+            },
+            {
+              "content": "{\"language\": \"English\", \"confidence\": \"medium\", \"reasoning\": \"The sentence structure is English, but it includes a Japanese word. The primary language appears to be English with some Japanese vocabulary.\"}",
+              "role": "assistant"
+            },
+            {
+              "content": "Now, analyze the following:\n\nLast utterance: $\"{last_utterance}\"\nAgent's last response: $\"{last_response}\"\nPreviously set language: $\"{66e8821d517bf2228b6c8667}\"",
+              "role": "user"
+            }
+          ]
+        },
+        "672ae8ad671f984162a8aa34": {
+          "settings": {
+            "model": "gpt-3.5-turbo",
+            "maxTokens": 256,
+            "temperature": 0.3
+          },
+          "system": "You are a customer support bot that tries to help the user. Guide them towards asking for support.",
+          "messages": [
+            {
+              "content": "Speak directly to the end customer. Do not include anything outside of your answer. Ensure that you speak to users in the language identied below:\n\nlanguage: {66e8821d517bf2228b6c8667}",
+              "role": "user"
+            }
+          ]
+        },
+        "672ae92e671f984162a8aa40": {
+          "settings": {
+            "model": "gpt-3.5-turbo",
+            "maxTokens": 256,
+            "temperature": 0.3
+          },
+          "system": "You are a question optimizer. Keep your questions down to one sentence",
+          "messages": [
+            {
+              "content": "You are an AI assistant specialized in generating optimal questions for retrieval augmented generation (RAG) in the context of user queries and intent. Your goal is to create a detailed question that will yield the most relevant and useful information from a knowledge base to enhance the quality of responses to user queries.\n\n##Task\n\nGenerate a single, comprehensive question that best captures the information needed to address the user’s query or intent, considering the following guidelines:\n\n\t1.\tAnalyze the user’s last response and the conversation history to identify the core topic, intent, or information need.\n\t2.\tCraft a question that is:\n\t•\tHighly specific and detailed, targeting exact information in the knowledge base\n\t•\tComprehensive, covering multiple aspects of the topic mentioned by the user\n\t•\tPhrased naturally, but including key terms multiple times for emphasis\n\t•\tFocused strongly on the user’s perspective if specified in the conversation\n\t3.\tInclude relevant keywords and phrases throughout the question, repeating important terms where appropriate. Use specific phrasing that emphasizes the user perspective.\n\t4.\tStructure the question to cover multiple related aspects, using phrases like “including”, “as well as”, or “such as”.\n\t5.\tIncorporate specific terms that are likely to appear in relevant documents.\n\t6.\tUse repetitive but varied phrasing to emphasize key points and increase the likelihood of matching relevant documents.\n\t7.\tFor policy-related questions, mention potential exceptions or special circumstances only if they were part of the user’s query.\n\t8.\tFocus solely on the aspects mentioned by the user. Do not include additional topics or comparisons unless specifically requested.\n\n\n##Output\n\nProvide only the generated question, without quotation marks or any additional text.\n\n## Input Data\n\nUser's last response:\nHow do common processes work for users?",
+              "role": "user"
+            },
+            {
+              "content": "What are the specific details of common processes for users, including relevant terms for users based on specific factors, and potential challenges that users may face when following common processes? Additionally, are there any exceptions or special considerations such as specific circumstances that may impact the user process?",
+              "role": "assistant"
+            },
+            {
+              "content": "User's last response:\nWhat services are offered for users?",
+              "role": "user"
+            },
+            {
+              "content": "What are the different services offered specifically for users, including key details, features, and any limitations or exclusions for user service plans? How do these user service plans work within the industry platform, and what should users know about the service when using it through the platform?",
+              "role": "assistant"
+            },
+            {
+              "content": "{vf_memory}",
+              "role": "user"
+            },
+            {
+              "content": "User's last response:\n$\"{last_utterance}\"\n\nNow, take a deep breath and generate a detailed, comprehensive question that targets the most relevant information in the knowledge base, repeating key terms where appropriate and emphasizing the user perspective as specified in their query.\n\nGenerated question:",
+              "role": "user"
+            }
+          ]
+        },
+        "672ae94c671f984162a8aa43": {
+          "settings": {
+            "model": "claude-3-haiku",
+            "maxTokens": 256,
+            "temperature": 0.3
+          },
+          "system": "You are an AI Support Agent. Your task is to create a brief, friendly clarifying question that fits naturally into an ongoing conversation.",
+          "messages": [
+            {
+              "content": "You are an AI Support Agent. Your task is to create a brief, friendly clarifying question that fits naturally into an ongoing conversation. You will be given the following data: 'guidelines for the question', the 'user's question' that needs a response, and the 'information retrieved from a knowledge base'.\n\n## Instructions:\n1. Analyze the user's question and the provided information.\n2. Identify the key ambiguity or missing detail in the user's query.\n3. Construct a single, clear, and concise clarifying question related to providing support.\n4. Use a friendly tone, but prioritize brevity and directness.\n5. You may use one appropriate emoji if it adds value without increasing length significantly.\n6. Guide the user towards a precise response.\n7. Avoid multiple questions or unnecessary explanations.\n8. Focus on the single most important aspect that requires clarification.\n9. Begin with a very brief acknowledgment, then ask your clarifying question.\n10. Aim for a total response length of 15-20 words maximum.\n\n## Example Responses:\n- \"Sure. Are you a  guest or host? The cancellation process differs for each.\"\n- \"Uh-huh, okay. Can you tell me which  plan are you asking about?\"\n- \"Sure. And is this for a domestic or international  rental? \"\n\n## Input data:\nGuidelines for the question: $\"{66e8813c517bf2228b6c8665}\"\n \nThe user's question: $\"{last_utterance}\"\n Information from knowledge base: $\"{chunks}\"\nThe user's language: $\"{66e8821d517bf2228b6c8667}\"\n \nNow, create your brief, friendly clarifying question in the user's language that fits naturally into the ongoing dialogue:",
+              "role": "user"
+            }
+          ]
+        },
+        "672ae8f2671f984162a8aa37": {
+          "settings": {
+            "model": "gpt-4o-mini",
+            "maxTokens": 500,
+            "temperature": 0.3
+          },
+          "system": "You are an AI customer support agent.",
+          "messages": [
+            {
+              "content": "{vf_memory}",
+              "role": "user"
+            },
+            {
+              "content": "You are an AI customer support bot helping a customer with their question. When communicating with guests, follow these guidelines:\n\nUse the following step-by-step reasoning.\n\n1. Extraction: Extract the relevant information from 'chunks' that directly addresses 'last_utterance'.\n\n2. Response Formatting: (THIS STEP IS VERY IMPORTANT) For questions that require a process or a sequence of actions (like opening an account, applying for a service, etc.), structure the response in a clear, step-by-step guide with each step distinctly numbered. For other types of questions, provide a concise and direct answer.\n\n3. Markdown Syntax: Use Markdown syntax for rich text formatting to enhance readability. For process-oriented responses, use a numbered list format. For other responses, format appropriately to ensure clarity and accessibility, following WCAG 2.1 guidelines.\n\n5. Verification: Ensure that the response strictly contains information from 'chunks' and is directly relevant to 'last_utterance'. Do not incorporate any additional or external information.\n\n6. Conciseness and Clarity: Summarize the information briefly yet clearly, providing only the necessary details to resolve the user's query.\n\nAdditional Instructions:\n\nDo not include links to URLs or information not present in 'chunks'.\nMaintain a friendly, conversational tone, using \"I\" and \"we\" to foster a connection with the user.\n\nSpecifically, emphasize the step-by-step format for any instructional or process-related queries.\n\nInput data:\n1. Customers question: \"{last_utterance}\"\n2. Provided details: \"{chunks}\"\n3. User's language: \"{66e8821d517bf2228b6c8667}\"  (if unknown default to English)\n4. Customer's name: {name}  and {team} \n\nNow, take a deep breath and respond to the guest's question in their language ({66e8821d517bf2228b6c8667}),  or in English if the language is unknown. Remember to follow all the guidelines provided above.",
+              "role": "user"
+            }
+          ]
+        },
+        "674f3b84a4f2504f702d3586": {
+          "settings": {
+            "model": "claude-3-haiku",
+            "maxTokens": 256,
+            "temperature": 0.3
+          },
+          "system": "",
+          "messages": [
+            {
+              "content": "{vf_memory}",
+              "role": "user"
+            },
+            {
+              "content": "Help the user reflect on their day. Be supportive and understanding and ask thoughtful follow up questions. The users previous question was {last_utterance}",
+              "role": "user"
+            }
+          ]
+        },
+        "674f3ce3a4f2504f702d366f": {
+          "settings": {
+            "model": "claude-3-haiku",
+            "maxTokens": 256,
+            "temperature": 0.3
+          },
+          "system": "",
+          "messages": [
+            {
+              "content": "{vf_memory}",
+              "role": "user"
+            },
+            {
+              "content": "Help the user brainstorm ideas. Be supportive and understanding and ask thoughtful follow up questions. The users previous question was {last_utterance}",
+              "role": "user"
+            }
+          ]
+        },
+        "674f3e0da4f2504f702d3673": {
+          "settings": {
+            "model": "gpt-4o",
+            "maxTokens": 256,
+            "temperature": 0.3
+          },
+          "system": "",
+          "messages": [
+            {
+              "content": "Clean up an idea a user provided. Remove prefixes like \"I have an idea\", \"My idea is\", \"Idea\". Here is the idea: {idea}",
+              "role": "user"
+            }
+          ]
+        }
+      }
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "03_03",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [
+          {
+            "key": "None",
+            "name": "None",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "None"
+              }
+            ],
+            "noteID": null
+          }
+        ],
+        "slots": [
+          {
+            "key": "674f39baa43a5f88550f6529",
+            "name": "Meeting_time",
+            "color": "#515A63",
+            "inputs": [],
+            "type": {
+              "value": "VF.DATETIME"
+            },
+            "description": null
+          },
+          {
+            "key": "674f39c7a43a5f88550f6531",
+            "name": "Person_to_meet",
+            "color": "#CB627B",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            },
+            "description": null
+          }
+        ]
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "functionDefinitions": {},
+        "referencedResponseIDs": [
+          "674f6005a43a5f88550f8e4e",
+          "674f431fa43a5f88550f760d"
+        ],
+        "slotsMap": {
+          "674f39baa43a5f88550f6529": {
+            "key": "674f39baa43a5f88550f6529",
+            "name": "Meeting_time",
+            "color": "#515A63",
+            "inputs": [],
+            "type": {
+              "value": "VF.DATETIME"
+            }
+          },
+          "674f39c7a43a5f88550f6531": {
+            "key": "674f39c7a43a5f88550f6531",
+            "name": "Person_to_meet",
+            "color": "#CB627B",
+            "inputs": [],
+            "type": {
+              "value": "VF.NAME"
+            }
+          }
+        },
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "chat",
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [
+          "None"
+        ],
+        "goToIntentsSet": [],
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "KB_response": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "optimized_question": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "clarifying_question_check_counter": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "clarifying_question_check": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "clarifying_question": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "language_JSON": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "chunks": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "name": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "team": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "idea": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          }
+        },
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {},
+        "eventsMap": {}
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "intentClassification": {
+        "type": "llm",
+        "params": {
+          "model": "gpt-4o",
+          "temperature": 0.1
+        },
+        "promptWrapper": null
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "chunks",
+      "KBOutput",
+      "outputCorrectness",
+      "rewriteCounter",
+      "sourceContent2",
+      "sourceTitle2",
+      "sourceTitle1",
+      "sourceContent1",
+      "sourceContent",
+      "sourceTitle",
+      "userQuestion",
+      "conversation_history",
+      "user_question",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "optimizedQuestion",
+      "clarifyingQuestionCheckCounter",
+      "clarifyingQuestionCheck",
+      "clarifyingQuestion",
+      "languageJSON",
+      "AgentPersona",
+      "agentPersona",
+      "KB_output",
+      "output_correctness",
+      "rewrite_counter",
+      "optimized_question",
+      "clarifying_question_check_counter",
+      "clarifying_question_check",
+      "clarifying_question",
+      "language_JSON",
+      "agent_persona",
+      "KB_response",
+      "name",
+      "team",
+      "idea"
+    ],
+    "_id": "674f51eea43a5f88550f8171",
+    "updatedAt": "2024-12-03T19:52:15.411Z",
+    "publishedAt": "2024-09-27T16:54:27.996Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 70616,
+        "updatedAt": "2024-12-03T18:46:06.989Z"
+      }
+    ],
+    "projectID": "674f51eea43a5f88550f8170",
+    "rootDiagramID": "64dbb6696a8fab0013dba194",
+    "templateDiagramID": "64dbb6696a8fab0013dba195"
+  },
+  "diagrams": {
+    "674f3862a4f2504f702d352a": {
+      "name": "Load User Profile",
+      "type": "COMPONENT",
+      "zoom": 100,
+      "nodes": {
+        "674f38620dfbd024b869dd16": {
+          "type": "start",
+          "nodeID": "674f38620dfbd024b869dd16",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Continue",
+            "color": "#43494E",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "674f38620dfbd024b869dd17",
+                  "type": "next",
+                  "target": "674f37eb0dfbd024b869dcdd",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            },
+            "steps": []
+          }
+        },
+        "674f37eb0dfbd024b869dcdd": {
+          "type": "block",
+          "data": {
+            "name": "Set information",
+            "color": "",
+            "steps": [
+              "674f37eb0dfbd024b869dcdb"
+            ]
+          },
+          "nodeID": "674f37eb0dfbd024b869dcdd",
+          "coords": [
+            855,
+            120
+          ]
+        },
+        "674f37eb0dfbd024b869dcdb": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cm48pa0wm005n3b7lqqis5yi5",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "Denys"
+                    ]
+                  }
+                ],
+                "variableID": "674f380aa43a5f88550f6307"
+              },
+              {
+                "id": "cm48pacr3006t3b7l7bgu6rmq",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "Machine Learning"
+                    ]
+                  }
+                ],
+                "variableID": "674f3817a43a5f88550f6317"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "674f37eb0dfbd024b869dcdc"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "674f37eb0dfbd024b869dcdb"
+        }
+      },
+      "offsetX": 272,
+      "offsetY": 204,
+      "modified": 1733245026,
+      "variables": [],
+      "creatorID": 70616,
+      "_id": "674f51efa43a5f88550f8174",
+      "diagramID": "674f3862a4f2504f702d352a",
+      "versionID": "674f51eea43a5f88550f8171"
+    },
+    "674e624d45d044aef574e9cf": {
+      "name": "Answer Questions",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "674e624d9b20dc00072ba932": {
+          "coords": [
+            360,
+            120
+          ],
+          "type": "block",
+          "data": {
+            "name": "",
+            "color": "",
+            "steps": [
+              "674e624d9b20dc00072ba931"
+            ],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "674e624d9b20dc00072ba932"
+        },
+        "674e624d9b20dc00072ba931": {
+          "nodeID": "674e624d9b20dc00072ba931",
+          "type": "trigger",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cm48pctqn00i63b7lyfmdhhzl",
+                "type": "intent",
+                "resourceID": "None",
+                "settings": {
+                  "local": false
+                }
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "id": "674e624d9b20dc00072ba933",
+                  "type": "next",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          426.54,
+                          142
+                        ]
+                      },
+                      {
+                        "point": [
+                          492.5,
+                          143
+                        ]
+                      }
+                    ]
+                  },
+                  "target": "674e6329219d0da3c18ea522"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          }
+        },
+        "674e6329219d0da3c18ea520": {
+          "type": "kb-search",
+          "data": {
+            "name": "",
+            "question": [
+              {
+                "text": [
+                  "",
+                  {
+                    "variableID": "last_utterance"
+                  },
+                  " "
+                ]
+              }
+            ],
+            "maxChunks": 3,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "674e6336219d0da3c18ea52b",
+                  "id": "674e6329219d0da3c18ea521",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          823.5,
+                          195.25
+                        ]
+                      },
+                      {
+                        "point": [
+                          865.33,
+                          195.25
+                        ]
+                      },
+                      {
+                        "point": [
+                          865.33,
+                          143.55
+                        ]
+                      },
+                      {
+                        "point": [
+                          907.15,
+                          143.55
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "variableID": "chunks"
+          },
+          "nodeID": "674e6329219d0da3c18ea520"
+        },
+        "674e6329219d0da3c18ea522": {
+          "type": "block",
+          "data": {
+            "name": "Search knowledge base",
+            "steps": [
+              "674e6329219d0da3c18ea520"
+            ],
+            "color": ""
+          },
+          "nodeID": "674e6329219d0da3c18ea522",
+          "coords": [
+            657.5,
+            115.9970703125
+          ]
+        },
+        "674e6336219d0da3c18ea529": {
+          "type": "response-prompt",
+          "data": {
+            "name": "Create answer",
+            "promptID": "672ae8f2671f984162a8aa37",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "674e6329219d0da3c18ea522",
+                  "id": "674e6336219d0da3c18ea52a",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          909.9,
+                          215.05
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          866.2,
+                          215.05
+                        ]
+                      },
+                      {
+                        "point": [
+                          866.2,
+                          143
+                        ]
+                      },
+                      {
+                        "point": [
+                          822.5,
+                          143
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "674e6336219d0da3c18ea529"
+        },
+        "674e6336219d0da3c18ea52b": {
+          "type": "block",
+          "data": {
+            "name": "Create answer",
+            "steps": [
+              "674e6336219d0da3c18ea529",
+              "674f60030dfbd024b869e15d",
+              "674f5ffd0dfbd024b869e158"
+            ],
+            "color": ""
+          },
+          "nodeID": "674e6336219d0da3c18ea52b",
+          "coords": [
+            1072.1543423617522,
+            116.54877853041262
+          ]
+        },
+        "674f5ffd0dfbd024b869e158": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "last_utterance"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "674e6329219d0da3c18ea522",
+                  "id": "674f5ffd0dfbd024b869e159",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          906.15,
+                          380.3
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          864.33,
+                          380.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          864.33,
+                          143
+                        ]
+                      },
+                      {
+                        "point": [
+                          822.5,
+                          143
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "674f5ffd0dfbd024b869e158",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "674f60030dfbd024b869e15d": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "674f60030dfbd024b869e15e"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "674f6005a43a5f88550f8e4e"
+          },
+          "nodeID": "674f60030dfbd024b869e15d"
+        }
+      },
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1733190221,
+      "variables": [],
+      "creatorID": 70616,
+      "_id": "674f51efa43a5f88550f817a",
+      "diagramID": "674e624d45d044aef574e9cf",
+      "versionID": "674f51eea43a5f88550f8171"
+    },
+    "66e88257ee916c66659cd5f1": {
+      "name": "Ask Clarifying Question",
+      "type": "COMPONENT",
+      "zoom": 100,
+      "nodes": {
+        "66e8825792b2e568c9bba293": {
+          "type": "start",
+          "data": {
+            "name": "Continue",
+            "color": "#56b365",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "66e8825792b2e568c9bba294",
+                  "type": "next",
+                  "target": "66e880a492b2e568c9bba1fc",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          580.32,
+                          101.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          635.16,
+                          101.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          635.16,
+                          54.27
+                        ]
+                      },
+                      {
+                        "point": [
+                          690,
+                          54.27
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "steps": [],
+            "triggers": []
+          },
+          "nodeID": "66e8825792b2e568c9bba293",
+          "coords": [
+            513.8511454442935,
+            79.97518523364788
+          ]
+        },
+        "66e880a492b2e568c9bba1fc": {
+          "type": "block",
+          "data": {
+            "name": "Clarifying question check counter",
+            "color": "#A1ADBA",
+            "steps": [
+              "66e880a492b2e568c9bba206"
+            ]
+          },
+          "nodeID": "66e880a492b2e568c9bba1fc",
+          "coords": [
+            855,
+            27.271658254172344
+          ]
+        },
+        "66e880a492b2e568c9bba1fe": {
+          "type": "block",
+          "data": {
+            "name": "Check if clarifying question required",
+            "color": "#A1ADBA",
+            "steps": [
+              "672aea1a4ad566db79685917",
+              "66e880a492b2e568c9bba20d"
+            ]
+          },
+          "nodeID": "66e880a492b2e568c9bba1fe",
+          "coords": [
+            1293.0558989668436,
+            28.730767052348323
+          ]
+        },
+        "66e880a492b2e568c9bba200": {
+          "type": "block",
+          "data": {
+            "name": "Create clarifying question",
+            "color": "#A1ADBA",
+            "steps": [
+              "66e880a492b2e568c9bba211",
+              "672aea2d4ad566db7968591b",
+              "66e880a492b2e568c9bba21a"
+            ]
+          },
+          "nodeID": "66e880a492b2e568c9bba200",
+          "coords": [
+            1729.4458352194883,
+            28.686482196403716
+          ]
+        },
+        "66e880a492b2e568c9bba206": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "Clarifying question check = 1 or fewer",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "less",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "66e880de517bf2228b6c8664"
+                      },
+                      {
+                        "type": "value",
+                        "value": "1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "Else"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "66e880a492b2e568c9bba207",
+                  "data": {}
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "66e880a492b2e568c9bba1fe",
+                  "id": "66e880a492b2e568c9bba208",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1021,
+                          115.77
+                        ]
+                      },
+                      {
+                        "point": [
+                          1074.53,
+                          115.77
+                        ]
+                      },
+                      {
+                        "point": [
+                          1074.53,
+                          55.73
+                        ]
+                      },
+                      {
+                        "point": [
+                          1128.06,
+                          55.73
+                        ],
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#A1ADBA",
+                    "event": {
+                      "type": "Clarifying question check = 1 or fewer"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "66e880a492b2e568c9bba206"
+        },
+        "66e880a492b2e568c9bba20d": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "We need to ask a clarifying question",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "contains",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "66e8813c517bf2228b6c8665"
+                      },
+                      {
+                        "type": "value",
+                        "value": "#"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "Else"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "66e880a492b2e568c9bba20e",
+                  "data": {
+                    "caption": null,
+                    "points": [
+                      {
+                        "point": [
+                          992.0321289601084,
+                          1053.8137056012195
+                        ]
+                      },
+                      {
+                        "point": [
+                          1069.1821289601085,
+                          1053.8137056012195
+                        ]
+                      },
+                      {
+                        "point": [
+                          1069.1821289601085,
+                          1236.4337056012193
+                        ]
+                      },
+                      {
+                        "point": [
+                          1146.3321289601083,
+                          1236.4337056012193
+                        ],
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#56b365"
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "66e880a492b2e568c9bba200",
+                  "id": "66e880a492b2e568c9bba20f",
+                  "data": {
+                    "color": "#A1ADBA",
+                    "points": [
+                      {
+                        "point": [
+                          1459.06,
+                          196.23
+                        ]
+                      },
+                      {
+                        "point": [
+                          1511.75,
+                          196.23
+                        ]
+                      },
+                      {
+                        "point": [
+                          1511.75,
+                          55.69
+                        ]
+                      },
+                      {
+                        "point": [
+                          1564.45,
+                          55.69
+                        ],
+                        "allowedToTop": true
+                      }
+                    ],
+                    "event": {
+                      "type": "We need to ask a clarifying question"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "66e880a492b2e568c9bba20d"
+        },
+        "66e880a492b2e568c9bba211": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cm0o3uc6c1p9l06l70qqo7785",
+                "label": "Clarifying question check counter",
+                "variableID": "66e880de517bf2228b6c8664",
+                "type": "script",
+                "value": [
+                  "Number=(clarifying_question_check_counter)+1"
+                ]
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66e880a492b2e568c9bba212",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          805.1807214711368,
+                          1073.8064037014876
+                        ]
+                      },
+                      {
+                        "point": [
+                          964.4307214711368,
+                          1076.8064037014876
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66e880a492b2e568c9bba211"
+        },
+        "66e880a492b2e568c9bba21a": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": []
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66e880a492b2e568c9bba21a",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "672aea1a4ad566db79685917": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cm35cqv89046i3b7kx1u1uob8",
+                "type": "prompt",
+                "label": null,
+                "value": "672ae903671f984162a8aa3a",
+                "variableID": "66e8813c517bf2228b6c8665"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "672aea1a4ad566db79685918"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "672aea1a4ad566db79685917"
+        },
+        "672aea2d4ad566db7968591b": {
+          "type": "response-prompt",
+          "data": {
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "672aea2d4ad566db7968591c"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "promptID": "672ae94c671f984162a8aa43",
+            "name": "Create a clarifying question"
+          },
+          "nodeID": "672aea2d4ad566db7968591b"
+        },
+        "672e6be8c281ba694d67cb78": {
+          "type": "markup_text",
+          "data": {
+            "name": "Block",
+            "scale": 0.7231220605078281,
+            "rotate": 0,
+            "content": [
+              {
+                "textAlign": "left",
+                "children": [
+                  {
+                    "text": "Add intelligence",
+                    "fontWeight": "700"
+                  }
+                ]
+              },
+              {
+                "textAlign": "left",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "textAlign": "left",
+                "children": [
+                  {
+                    "text": "This component can be added before the 'create message' step in the Knowledge base response flow to add additional functionality to your agent like asking follow up questions! "
+                  },
+                  {
+                    "text": "Watch",
+                    "color": {
+                      "r": 59,
+                      "g": 64,
+                      "b": 66,
+                      "a": 1
+                    }
+                  },
+                  {
+                    "text": " the video to understand how to use them. You can make your own with "
+                  },
+                  {
+                    "url": "https://docs.voiceflow.com/docs/components",
+                    "type": "link",
+                    "children": [
+                      {
+                        "text": "components",
+                        "color": {
+                          "r": 59,
+                          "g": 64,
+                          "b": 66,
+                          "a": 1
+                        },
+                        "underline": true
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 455.47308659180993,
+            "backgroundColor": {
+              "r": 244,
+              "g": 227,
+              "b": 134,
+              "a": 1
+            }
+          },
+          "nodeID": "672e6be8c281ba694d67cb78",
+          "coords": [
+            627.5184249935193,
+            -238.27401096956254
+          ]
+        }
+      },
+      "offsetX": 148.91908364456523,
+      "offsetY": 236.0198518130817,
+      "modified": 1726513751,
+      "creatorID": 70616,
+      "variables": [],
+      "_id": "674f51efa43a5f88550f817b",
+      "diagramID": "66e88257ee916c66659cd5f1",
+      "versionID": "674f51eea43a5f88550f8171"
+    },
+    "64dbb6696a8fab0013dba195": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {},
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1701833501,
+      "creatorID": 70616,
+      "variables": [],
+      "menuItems": [],
+      "_id": "674f51efa43a5f88550f817c",
+      "diagramID": "64dbb6696a8fab0013dba195",
+      "versionID": "674f51eea43a5f88550f8171"
+    },
+    "64dbb6696a8fab0013dba194": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "674f430e0dfbd024b869ddea",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -736.46,
+                          -1687.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          -704.67,
+                          -1687.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          -704.67,
+                          -1699.6
+                        ]
+                      },
+                      {
+                        "point": [
+                          -672.88,
+                          -1699.6
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -801.0953401359956,
+            -1709.917709815855
+          ]
+        },
+        "674f430e0dfbd024b869dde8": {
+          "type": "component",
+          "data": {
+            "name": "",
+            "diagramID": "674f3862a4f2504f702d352a",
+            "variableMap": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "674f430e0dfbd024b869dde9"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "674f430e0dfbd024b869dde8"
+        },
+        "674f430e0dfbd024b869ddea": {
+          "type": "block",
+          "data": {
+            "name": "Intro",
+            "steps": [
+              "674f431d0dfbd024b869ddf4",
+              "674f430e0dfbd024b869dde8",
+              "674f43140dfbd024b869ddf0"
+            ],
+            "color": ""
+          },
+          "nodeID": "674f430e0dfbd024b869ddea",
+          "coords": [
+            -507.8762721087967,
+            -1726.5984744933094
+          ]
+        },
+        "674f43140dfbd024b869ddf0": {
+          "type": "choice-v2",
+          "data": {
+            "name": "Choice",
+            "items": [],
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "674f43140dfbd024b869ddf0",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "674f431d0dfbd024b869ddf4": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "674f431d0dfbd024b869ddf5"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "674f431fa43a5f88550f760d"
+          },
+          "nodeID": "674f431d0dfbd024b869ddf4"
+        }
+      },
+      "offsetX": 1200.8762721087967,
+      "offsetY": 1667.9341678526841,
+      "modified": 1701833501,
+      "creatorID": 70616,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "674f51efa43a5f88550f817d",
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "versionID": "674f51eea43a5f88550f8171"
+    }
+  },
+  "flows": [
+    {
+      "id": "674f3862a43a5f88550f636a",
+      "name": "Load User Profile",
+      "createdByID": 70616,
+      "folderID": null,
+      "diagramID": "674f3862a4f2504f702d352a",
+      "description": "",
+      "createdAt": "2024-12-03T16:57:07.000Z",
+      "updatedAt": "2024-12-03T18:06:54.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e88257517bf2228b6c8668",
+      "name": "Ask clarifying question",
+      "createdByID": 70616,
+      "folderID": null,
+      "diagramID": "66e88257ee916c66659cd5f1",
+      "description": "This component is intended to be used in the KB response. It uses AI to determine if we need to ask a clarifying question to provide a better response to the user.",
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "entities": [
+    {
+      "id": "674f39baa43a5f88550f6529",
+      "name": "Meeting_time",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": null,
+      "color": "#515A63",
+      "classifier": "VF.DATETIME",
+      "isArray": false,
+      "createdAt": "2024-12-03T17:02:50.000Z",
+      "updatedAt": "2024-12-03T17:02:50.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f39c7a43a5f88550f6531",
+      "name": "Person_to_meet",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": null,
+      "color": "#CB627B",
+      "classifier": "VF.NAME",
+      "isArray": false,
+      "createdAt": "2024-12-03T17:03:04.000Z",
+      "updatedAt": "2024-12-03T17:03:04.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "66e9f738cc90326d546e9b63",
+      "name": "Submit a ticket",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger this intent when the user is asking to submit a ticket or report a bug.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "VF.YES",
+      "name": "VF.YES",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger this intent when the user says yes, or responds in the affirmative.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "VF.NO",
+      "name": "VF.NO",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger this intent when the user says no, or responds in the negative.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e999d72d5420af16162e99",
+      "name": "Book a Meeting",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger this intent when the user wants to explicitly book a demo with someone on their team.\n\nDo not trigger when a custom is asking general questions like 'what can you do'",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T17:00:20.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3ad6a43a5f88550f66ad",
+      "name": "Reflection",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger this intent when the user is wants to reflect on their day.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-03T17:07:34.000Z",
+      "updatedAt": "2024-12-03T17:07:34.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3ccca43a5f88550f6c10",
+      "name": "Recommend Ideas",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger when the user is looking for new ideas",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-03T17:15:57.000Z",
+      "updatedAt": "2024-12-03T17:15:57.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3df0a43a5f88550f6e00",
+      "name": "Save an idea",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger when the user wants to save an idea",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-03T17:20:49.000Z",
+      "updatedAt": "2024-12-03T17:20:49.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f4625a43a5f88550f7862",
+      "name": "Current tasks",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": "Trigger when the user wants to see a list of their current tasks",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-12-03T17:55:50.000Z",
+      "updatedAt": "2024-12-03T17:55:50.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "utterances": [
+    {
+      "id": "66e9f2c5cc90326d546e9978",
+      "text": [
+        {
+          "text": [
+            "Of course"
+          ]
+        }
+      ],
+      "intentID": "VF.YES",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f2c5cc90326d546e9979",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "VF.YES",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f2c5cc90326d546e997a",
+      "text": [
+        {
+          "text": [
+            "You bet"
+          ]
+        }
+      ],
+      "intentID": "VF.YES",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f2c5cc90326d546e997b",
+      "text": [
+        {
+          "text": [
+            "Okay"
+          ]
+        }
+      ],
+      "intentID": "VF.YES",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f2c5cc90326d546e997c",
+      "text": [
+        {
+          "text": [
+            "Sure"
+          ]
+        }
+      ],
+      "intentID": "VF.YES",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f2c5cc90326d546e997d",
+      "text": [
+        {
+          "text": [
+            "Yes"
+          ]
+        }
+      ],
+      "intentID": "VF.YES",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f2c5cc90326d546e9977",
+      "text": [
+        {
+          "text": [
+            "Certainly"
+          ]
+        }
+      ],
+      "intentID": "VF.YES",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f287cc90326d546e9949",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "VF.NO",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f287cc90326d546e9944",
+      "text": [
+        {
+          "text": [
+            "Negative"
+          ]
+        }
+      ],
+      "intentID": "VF.NO",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e999d72d5420af16162e9a",
+      "text": [
+        {
+          "text": [
+            "Book a meeting"
+          ]
+        }
+      ],
+      "intentID": "66e999d72d5420af16162e99",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f287cc90326d546e9946",
+      "text": [
+        {
+          "text": [
+            "Absolutely not"
+          ]
+        }
+      ],
+      "intentID": "VF.NO",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f287cc90326d546e9947",
+      "text": [
+        {
+          "text": [
+            "I'm afraid not"
+          ]
+        }
+      ],
+      "intentID": "VF.NO",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f287cc90326d546e9948",
+      "text": [
+        {
+          "text": [
+            "No way"
+          ]
+        }
+      ],
+      "intentID": "VF.NO",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f287cc90326d546e994b",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "VF.NO",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f287cc90326d546e994c",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "VF.NO",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f287cc90326d546e994d",
+      "text": [
+        {
+          "text": [
+            "No"
+          ]
+        }
+      ],
+      "intentID": "VF.NO",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f2c5cc90326d546e9976",
+      "text": [
+        {
+          "text": [
+            "Absolutely"
+          ]
+        }
+      ],
+      "intentID": "VF.YES",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66eaf6511996156a0678cf6e",
+      "text": [
+        {
+          "text": [
+            "Need help with submitting a ticket"
+          ]
+        }
+      ],
+      "intentID": "66e9f738cc90326d546e9b63",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66eaf65a1996156a0678cf79",
+      "text": [
+        {
+          "text": [
+            "Is there a way to submit a ticket?"
+          ]
+        }
+      ],
+      "intentID": "66e9f738cc90326d546e9b63",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66eaf65a1996156a0678cf7a",
+      "text": [
+        {
+          "text": [
+            "I want to create a ticket"
+          ]
+        }
+      ],
+      "intentID": "66e9f738cc90326d546e9b63",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66eaf6491996156a0678cf64",
+      "text": [
+        {
+          "text": [
+            "Need help with submitting a ticket"
+          ]
+        }
+      ],
+      "intentID": "66e9f738cc90326d546e9b63",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66eaf6491996156a0678cf65",
+      "text": [
+        {
+          "text": [
+            "How do I submit a ticket?"
+          ]
+        }
+      ],
+      "intentID": "66e9f738cc90326d546e9b63",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66f59814917d70188b120edf",
+      "text": [
+        {
+          "text": [
+            "Create a ticket"
+          ]
+        }
+      ],
+      "intentID": "66e9f738cc90326d546e9b63",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66f59819917d70188b120ee0",
+      "text": [
+        {
+          "text": [
+            "Submit a ticket"
+          ]
+        }
+      ],
+      "intentID": "66e9f738cc90326d546e9b63",
+      "language": "en-us",
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "674f3929a43a5f88550f6433",
+      "text": [
+        {
+          "text": [
+            "I want to meet my team"
+          ]
+        }
+      ],
+      "intentID": "66e999d72d5420af16162e99",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:00:26.000Z"
+    },
+    {
+      "id": "674f392fa43a5f88550f6435",
+      "text": [
+        {
+          "text": [
+            "Book a one on one"
+          ]
+        }
+      ],
+      "intentID": "66e999d72d5420af16162e99",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:00:32.000Z"
+    },
+    {
+      "id": "674f3977a43a5f88550f64af",
+      "text": [
+        {
+          "text": [
+            "Schedule a meeting with the sales team"
+          ]
+        }
+      ],
+      "intentID": "66e999d72d5420af16162e99",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:01:44.000Z"
+    },
+    {
+      "id": "674f3977a43a5f88550f64b0",
+      "text": [
+        {
+          "text": [
+            "I need to set up a one on one with my manager"
+          ]
+        }
+      ],
+      "intentID": "66e999d72d5420af16162e99",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:01:44.000Z"
+    },
+    {
+      "id": "674f3977a43a5f88550f64b1",
+      "text": [
+        {
+          "text": [
+            "Book a conference call for next Monday"
+          ]
+        }
+      ],
+      "intentID": "66e999d72d5420af16162e99",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:01:44.000Z"
+    },
+    {
+      "id": "674f3977a43a5f88550f64b2",
+      "text": [
+        {
+          "text": [
+            "Can you help me organize a meeting with the project stakeholders?"
+          ]
+        }
+      ],
+      "intentID": "66e999d72d5420af16162e99",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:01:44.000Z"
+    },
+    {
+      "id": "674f3977a43a5f88550f64b3",
+      "text": [
+        {
+          "text": [
+            "I'd like to arrange a meeting to discuss the new project"
+          ]
+        }
+      ],
+      "intentID": "66e999d72d5420af16162e99",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:01:44.000Z"
+    },
+    {
+      "id": "674f3ad6a43a5f88550f66ae",
+      "text": [
+        {
+          "text": [
+            "Record a journal entry"
+          ]
+        }
+      ],
+      "intentID": "674f3ad6a43a5f88550f66ad",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:07:34.000Z"
+    },
+    {
+      "id": "674f3ad6a43a5f88550f66af",
+      "text": [
+        {
+          "text": [
+            "Reflection for the day"
+          ]
+        }
+      ],
+      "intentID": "674f3ad6a43a5f88550f66ad",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:07:34.000Z"
+    },
+    {
+      "id": "674f3ad6a43a5f88550f66b0",
+      "text": [
+        {
+          "text": [
+            "I'm feeling better"
+          ]
+        }
+      ],
+      "intentID": "674f3ad6a43a5f88550f66ad",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:07:34.000Z"
+    },
+    {
+      "id": "674f3ad6a43a5f88550f66b1",
+      "text": [
+        {
+          "text": [
+            "I'm feeling nervous after my current day"
+          ]
+        }
+      ],
+      "intentID": "674f3ad6a43a5f88550f66ad",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:07:34.000Z"
+    },
+    {
+      "id": "674f3ccca43a5f88550f6c11",
+      "text": [
+        {
+          "text": [
+            "Recommend ideas"
+          ]
+        }
+      ],
+      "intentID": "674f3ccca43a5f88550f6c10",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:15:57.000Z"
+    },
+    {
+      "id": "674f3ccca43a5f88550f6c12",
+      "text": [
+        {
+          "text": [
+            "I need some help brainstorming"
+          ]
+        }
+      ],
+      "intentID": "674f3ccca43a5f88550f6c10",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:15:57.000Z"
+    },
+    {
+      "id": "674f3ccca43a5f88550f6c13",
+      "text": [
+        {
+          "text": [
+            "Help me brainstorm"
+          ]
+        }
+      ],
+      "intentID": "674f3ccca43a5f88550f6c10",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:15:57.000Z"
+    },
+    {
+      "id": "674f3df0a43a5f88550f6e01",
+      "text": [
+        {
+          "text": [
+            "Save an idea"
+          ]
+        }
+      ],
+      "intentID": "674f3df0a43a5f88550f6e00",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:20:49.000Z"
+    },
+    {
+      "id": "674f3df0a43a5f88550f6e02",
+      "text": [
+        {
+          "text": [
+            "Can you log this idea"
+          ]
+        }
+      ],
+      "intentID": "674f3df0a43a5f88550f6e00",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:20:49.000Z"
+    },
+    {
+      "id": "674f3df0a43a5f88550f6e03",
+      "text": [
+        {
+          "text": [
+            "Oh I have an idea"
+          ]
+        }
+      ],
+      "intentID": "674f3df0a43a5f88550f6e00",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:20:49.000Z"
+    },
+    {
+      "id": "674f3df0a43a5f88550f6e04",
+      "text": [
+        {
+          "text": [
+            "Write down this idea"
+          ]
+        }
+      ],
+      "intentID": "674f3df0a43a5f88550f6e00",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:20:49.000Z"
+    },
+    {
+      "id": "674f4625a43a5f88550f7863",
+      "text": [
+        {
+          "text": [
+            "I want to see a list of my current tasks"
+          ]
+        }
+      ],
+      "intentID": "674f4625a43a5f88550f7862",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:55:50.000Z"
+    },
+    {
+      "id": "674f4625a43a5f88550f7864",
+      "text": [
+        {
+          "text": [
+            "Show me my outstanding tasks"
+          ]
+        }
+      ],
+      "intentID": "674f4625a43a5f88550f7862",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:55:50.000Z"
+    },
+    {
+      "id": "674f4625a43a5f88550f7865",
+      "text": [
+        {
+          "text": [
+            "I need to know my tasks for today"
+          ]
+        }
+      ],
+      "intentID": "674f4625a43a5f88550f7862",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:55:50.000Z"
+    },
+    {
+      "id": "674f4625a43a5f88550f7866",
+      "text": [
+        {
+          "text": [
+            "Can you show me what I need to work on?"
+          ]
+        }
+      ],
+      "intentID": "674f4625a43a5f88550f7862",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:55:50.000Z"
+    },
+    {
+      "id": "674f4625a43a5f88550f7867",
+      "text": [
+        {
+          "text": [
+            "List my ongoing tasks"
+          ]
+        }
+      ],
+      "intentID": "674f4625a43a5f88550f7862",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:55:50.000Z"
+    },
+    {
+      "id": "674f4625a43a5f88550f7868",
+      "text": [
+        {
+          "text": [
+            "Display my to-do list"
+          ]
+        }
+      ],
+      "intentID": "674f4625a43a5f88550f7862",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:55:50.000Z"
+    },
+    {
+      "id": "674f4625a43a5f88550f7869",
+      "text": [
+        {
+          "text": [
+            "What are my pending tasks?"
+          ]
+        }
+      ],
+      "intentID": "674f4625a43a5f88550f7862",
+      "language": "en-us",
+      "createdAt": "2024-12-03T17:55:50.000Z"
+    },
+    {
+      "id": "674f486ea43a5f88550f7a47",
+      "text": [
+        {
+          "text": [
+            "Idea, workfrom home fridays"
+          ]
+        }
+      ],
+      "intentID": "674f3df0a43a5f88550f6e00",
+      "language": "en-us",
+      "createdAt": "2024-12-03T18:05:35.000Z"
+    },
+    {
+      "id": "674f4868a43a5f88550f7a35",
+      "text": [
+        {
+          "text": [
+            "Add fruit to the cafeteria"
+          ]
+        }
+      ],
+      "intentID": "674f3df0a43a5f88550f6e00",
+      "language": "en-us",
+      "createdAt": "2024-12-03T18:05:28.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [
+    {
+      "id": "672b8cf088690850a00446e6",
+      "name": "Clarifying question prompts",
+      "scope": "prompt",
+      "parentID": null,
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "672b8d3788690850a0044715",
+      "name": "KB response prompts",
+      "scope": "prompt",
+      "parentID": null,
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    }
+  ],
+  "responses": [
+    {
+      "id": "674f6005a43a5f88550f8e4e",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T19:46:13.000Z",
+      "updatedAt": "2024-12-03T19:46:21.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e4658c97035e0f16ac4caa",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e4658c97035e0f16ac4cad",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e495882c6dde44b3c05728",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e880a4ee916c66659cd5ee",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e9ed3ecc90326d546e95e6",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e9f4e4cc90326d546e9a90",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f42d3a43a5f88550f75bb",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T17:41:40.000Z",
+      "updatedAt": "2024-12-03T17:41:49.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f462da43a5f88550f7870",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T17:55:57.000Z",
+      "updatedAt": "2024-12-03T17:56:51.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f431fa43a5f88550f760d",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T17:42:55.000Z",
+      "updatedAt": "2024-12-03T17:43:10.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f466ca43a5f88550f7889",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T17:57:00.000Z",
+      "updatedAt": "2024-12-03T17:57:07.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f39d4a43a5f88550f653e",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T17:03:16.000Z",
+      "updatedAt": "2024-12-03T17:03:41.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3989a43a5f88550f64dc",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T17:02:01.000Z",
+      "updatedAt": "2024-12-03T17:02:15.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3a04a43a5f88550f655f",
+      "name": "",
+      "createdByID": 70616,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-12-03T17:04:04.000Z",
+      "updatedAt": "2024-12-03T17:04:12.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "674f42d3a43a5f88550f75bd",
+      "discriminatorID": "674f42d3a43a5f88550f75bc",
+      "text": [
+        {
+          "text": [
+            "Anything else I can help you with?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T17:41:40.000Z"
+    },
+    {
+      "id": "674f431fa43a5f88550f760f",
+      "discriminatorID": "674f431fa43a5f88550f760e",
+      "text": [
+        {
+          "text": [
+            "Hey I'm your onboarding coach, what can I help you with today?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T17:42:55.000Z"
+    },
+    {
+      "id": "674f3989a43a5f88550f64de",
+      "discriminatorID": "674f3989a43a5f88550f64dd",
+      "text": [
+        {
+          "text": [
+            "Sure I can help you book a meeting!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T17:02:01.000Z"
+    },
+    {
+      "id": "674f3a04a43a5f88550f6561",
+      "discriminatorID": "674f3a04a43a5f88550f6560",
+      "text": [
+        {
+          "text": [
+            "Anything else I can help you with?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T17:04:04.000Z"
+    },
+    {
+      "id": "674f466ca43a5f88550f788b",
+      "discriminatorID": "674f466ca43a5f88550f788a",
+      "text": [
+        {
+          "text": [
+            "Anything else I can help you with?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T17:57:00.000Z"
+    },
+    {
+      "id": "66e9f4e4cc90326d546e9a92",
+      "discriminatorID": "66e9f4e4cc90326d546e9a91",
+      "text": [
+        {
+          "text": [
+            "This workflow hasn't been built yet."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e4658c97035e0f16ac4cac",
+      "discriminatorID": "66e4658c97035e0f16ac4cab",
+      "text": [
+        {
+          "text": [
+            "Sorry. I didn't quite get that, can you please try asking the question in a different way?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e4658c97035e0f16ac4caf",
+      "discriminatorID": "66e4658c97035e0f16ac4cae",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "KBOutput"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e880a4ee916c66659cd5f0",
+      "discriminatorID": "66e880a4ee916c66659cd5ef",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "66e881bb517bf2228b6c8666"
+            },
+            "  "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9ed3ecc90326d546e95e8",
+      "discriminatorID": "66e9ed3ecc90326d546e95e7",
+      "text": [
+        {
+          "text": [
+            "Ask a question, and I'll use the knowledge you provided to respond."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e495882c6dde44b3c0572a",
+      "discriminatorID": "66e495882c6dde44b3c05729",
+      "text": [
+        {
+          "text": [
+            "Hi there, I'm your new AI agent!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "674f39d4a43a5f88550f6540",
+      "discriminatorID": "674f39d4a43a5f88550f653f",
+      "text": [
+        {
+          "text": [
+            "I've booked you a meeting with ",
+            {
+              "entityID": "674f39c7a43a5f88550f6531"
+            },
+            " on ",
+            {
+              "entityID": "674f39baa43a5f88550f6529"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T17:03:16.000Z"
+    },
+    {
+      "id": "674f462da43a5f88550f7872",
+      "discriminatorID": "674f462da43a5f88550f7871",
+      "text": [
+        {
+          "text": [
+            "Your current projects are to:"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "- 1 on 1 with your manager"
+          ]
+        },
+        {
+          "text": [
+            "- Find a \"first issue\" bug and complete it"
+          ]
+        },
+        {
+          "text": [
+            "- Complete the HR onboarding"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T17:55:57.000Z"
+    },
+    {
+      "id": "674f6005a43a5f88550f8e50",
+      "discriminatorID": "674f6005a43a5f88550f8e4f",
+      "text": [
+        {
+          "text": [
+            "Anything else I can help with?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-12-03T19:46:13.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "66e4658c97035e0f16ac4cab",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66e4658c97035e0f16ac4caa",
+      "variantOrder": [
+        "66e4658c97035e0f16ac4cac"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e4658c97035e0f16ac4cae",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66e4658c97035e0f16ac4cad",
+      "variantOrder": [
+        "66e4658c97035e0f16ac4caf"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e495882c6dde44b3c05729",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66e495882c6dde44b3c05728",
+      "variantOrder": [
+        "66e495882c6dde44b3c0572a"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e880a4ee916c66659cd5ef",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66e880a4ee916c66659cd5ee",
+      "variantOrder": [
+        "66e880a4ee916c66659cd5f0"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9ed3ecc90326d546e95e7",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66e9ed3ecc90326d546e95e6",
+      "variantOrder": [
+        "66e9ed3ecc90326d546e95e8"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "66e9f4e4cc90326d546e9a91",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66e9f4e4cc90326d546e9a90",
+      "variantOrder": [
+        "66e9f4e4cc90326d546e9a92"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z"
+    },
+    {
+      "id": "674f3989a43a5f88550f64dd",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "674f3989a43a5f88550f64dc",
+      "variantOrder": [
+        "674f3989a43a5f88550f64de"
+      ],
+      "createdAt": "2024-12-03T17:02:01.000Z"
+    },
+    {
+      "id": "674f3a04a43a5f88550f6560",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "674f3a04a43a5f88550f655f",
+      "variantOrder": [
+        "674f3a04a43a5f88550f6561"
+      ],
+      "createdAt": "2024-12-03T17:04:04.000Z"
+    },
+    {
+      "id": "674f39d4a43a5f88550f653f",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "674f39d4a43a5f88550f653e",
+      "variantOrder": [
+        "674f39d4a43a5f88550f6540"
+      ],
+      "createdAt": "2024-12-03T17:03:16.000Z"
+    },
+    {
+      "id": "674f42d3a43a5f88550f75bc",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "674f42d3a43a5f88550f75bb",
+      "variantOrder": [
+        "674f42d3a43a5f88550f75bd"
+      ],
+      "createdAt": "2024-12-03T17:41:40.000Z"
+    },
+    {
+      "id": "674f462da43a5f88550f7871",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "674f462da43a5f88550f7870",
+      "variantOrder": [
+        "674f462da43a5f88550f7872"
+      ],
+      "createdAt": "2024-12-03T17:55:57.000Z"
+    },
+    {
+      "id": "674f431fa43a5f88550f760e",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "674f431fa43a5f88550f760d",
+      "variantOrder": [
+        "674f431fa43a5f88550f760f"
+      ],
+      "createdAt": "2024-12-03T17:42:55.000Z"
+    },
+    {
+      "id": "674f466ca43a5f88550f788a",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "674f466ca43a5f88550f7889",
+      "variantOrder": [
+        "674f466ca43a5f88550f788b"
+      ],
+      "createdAt": "2024-12-03T17:57:00.000Z"
+    },
+    {
+      "id": "674f6005a43a5f88550f8e4f",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "674f6005a43a5f88550f8e4e",
+      "variantOrder": [
+        "674f6005a43a5f88550f8e50"
+      ],
+      "createdAt": "2024-12-03T19:46:13.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "KBOutput",
+      "name": "KB_response",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "The final answer formed by the AI to be shown to the user.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e87e79517bf2228b6c8657",
+      "name": "optimized_question",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Optimized version of the users question for the AI to answer. It stores a reformatted question that uses memory.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e880de517bf2228b6c8664",
+      "name": "clarifying_question_check_counter",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "How many times the AI has asked a clarifying question. This is used so it doesnt ask too many clarifying questions.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e8813c517bf2228b6c8665",
+      "name": "clarifying_question_check",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Determine if the AI needs to ask a clarifying question.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e881bb517bf2228b6c8666",
+      "name": "clarifying_question",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Clarifying question asked by the AI",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "66e8821d517bf2228b6c8667",
+      "name": "language_JSON",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Information about the users language. Generated by AI",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "chunks",
+      "name": "chunks",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Information received from the knowledge base - also known as 'chunks'.",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f380aa43a5f88550f6307",
+      "name": "name",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T16:55:39.000Z",
+      "updatedAt": "2024-12-03T16:55:39.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3817a43a5f88550f6317",
+      "name": "team",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T16:55:51.000Z",
+      "updatedAt": "2024-12-03T16:55:51.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3e1ba43a5f88550f6e22",
+      "name": "idea",
+      "createdByID": 70616,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-12-03T17:21:32.000Z",
+      "updatedAt": "2024-12-03T17:21:32.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "workflows": [
+    {
+      "id": "66df755be937eb000784abb2",
+      "name": "Home",
+      "createdByID": 70616,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "assigneeID": null,
+      "description": "The main menu of your agent. We recommend keeping it simple and using it to prompt a question from the user.",
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T19:45:33.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674e624d49b8573a0d5248db",
+      "name": "Answer Questions",
+      "createdByID": 70616,
+      "folderID": null,
+      "status": null,
+      "isStart": false,
+      "diagramID": "674e624d45d044aef574e9cf",
+      "assigneeID": 70616,
+      "description": "Helps answer questions the user might have from the knowledge base",
+      "createdAt": "2024-12-03T01:43:42.000Z",
+      "updatedAt": "2024-12-03T19:47:54.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [
+    {
+      "id": "672ae903671f984162a8aa3a",
+      "name": "Clarifying question check",
+      "createdByID": 70616,
+      "folderID": "672b8cf088690850a00446e6",
+      "description": "Look at the information found and determine if a clarifying question is needed.",
+      "settings": {
+        "model": "gpt-4o-mini"
+      },
+      "messageOrder": [
+        "672ae903671f984162a8aa3b",
+        "672ae903671f984162a8aa3c"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f382ca4f2504f702d3520",
+      "name": "Untitled prompt",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": null,
+      "settings": {},
+      "messageOrder": [
+        "674f382ca4f2504f702d3521",
+        "674f382ca4f2504f702d3522"
+      ],
+      "createdAt": "2024-12-03T16:56:13.000Z",
+      "updatedAt": "2024-12-03T16:56:13.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "672ae961671f984162a8aa46",
+      "name": "Language Classifier",
+      "createdByID": 70616,
+      "folderID": "672b8d3788690850a0044715",
+      "description": "Classify the language that the user is speaking.",
+      "settings": {
+        "model": "gpt-3.5-turbo"
+      },
+      "messageOrder": [
+        "672ae961671f984162a8aa47",
+        "672ae961671f984162a8aa48",
+        "672b8d7c039d320007ef912d",
+        "672b8d7c039d320007ef912e",
+        "672b8d7e039d320007ef912f",
+        "672b8d7e039d320007ef9130",
+        "672b8d80039d320007ef9131",
+        "672b8d80039d320007ef9132",
+        "672b8de7039d320007ef9139",
+        "672b8de7039d320007ef913a",
+        "672b8dff039d320007ef913e",
+        "672b8dff039d320007ef913f",
+        "672b8e11039d320007ef9189",
+        "672b8e11039d320007ef918a"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "672ae8ad671f984162a8aa34",
+      "name": "No information found",
+      "createdByID": 70616,
+      "folderID": "672b8d3788690850a0044715",
+      "description": "Create a response if no information is found.",
+      "settings": {
+        "model": "gpt-3.5-turbo"
+      },
+      "messageOrder": [
+        "672ae8ad671f984162a8aa35",
+        "672ae8ad671f984162a8aa36"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "672ae92e671f984162a8aa40",
+      "name": "Optimize question",
+      "createdByID": 70616,
+      "folderID": "672b8d3788690850a0044715",
+      "description": "This prompt optimizes the users question using the conversation memory.",
+      "settings": {
+        "model": "gpt-3.5-turbo"
+      },
+      "messageOrder": [
+        "672ae92e671f984162a8aa41",
+        "672ae92e671f984162a8aa42",
+        "672b8adc039d320007ef90d5",
+        "672b8adc039d320007ef90d6",
+        "672b8b4d039d320007ef90e2",
+        "672b8c1f88690850a004469b",
+        "672b8b4d039d320007ef90e3"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "672ae94c671f984162a8aa43",
+      "name": "Create a clarifying question",
+      "createdByID": 70616,
+      "folderID": "672b8cf088690850a00446e6",
+      "description": "Create a clarifying question based on the users initial question.",
+      "settings": {},
+      "messageOrder": [
+        "672ae94c671f984162a8aa44",
+        "672ae94c671f984162a8aa45"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "672ae8f2671f984162a8aa37",
+      "name": "Create answer",
+      "createdByID": 70616,
+      "folderID": "672b8d3788690850a0044715",
+      "description": "Using the information found from the 'search knowledge base' step, this prompt creates a detailed answer for the user.",
+      "settings": {
+        "model": "gpt-4o-mini",
+        "maxTokens": 500
+      },
+      "messageOrder": [
+        "672ae8f2671f984162a8aa38",
+        "672b917c88690850a0044a49",
+        "672ae8f2671f984162a8aa39"
+      ],
+      "createdAt": "2024-12-03T01:32:45.000Z",
+      "updatedAt": "2024-12-03T01:32:45.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3b84a4f2504f702d3586",
+      "name": "Reflecting prompt",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": null,
+      "settings": {},
+      "messageOrder": [
+        "674f3b84a4f2504f702d3587",
+        "674f3c30a43a5f88550f697a",
+        "674f3b84a4f2504f702d3588"
+      ],
+      "createdAt": "2024-12-03T17:10:28.000Z",
+      "updatedAt": "2024-12-03T17:13:20.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3ce3a4f2504f702d366f",
+      "name": "Brainstorm ideas",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": null,
+      "settings": {},
+      "messageOrder": [
+        "674f3ce3a4f2504f702d3670",
+        "674f3ceea43a5f88550f6c90",
+        "674f3ce3a4f2504f702d3671"
+      ],
+      "createdAt": "2024-12-03T17:16:19.000Z",
+      "updatedAt": "2024-12-03T17:18:23.000Z",
+      "updatedByID": 70616
+    },
+    {
+      "id": "674f3e0da4f2504f702d3673",
+      "name": "Process Idea",
+      "createdByID": 70616,
+      "folderID": null,
+      "description": null,
+      "settings": {
+        "model": "gpt-4o"
+      },
+      "messageOrder": [
+        "674f3e0da4f2504f702d3674",
+        "674f3e0da4f2504f702d3675"
+      ],
+      "createdAt": "2024-12-03T17:21:18.000Z",
+      "updatedAt": "2024-12-03T18:43:09.000Z",
+      "updatedByID": 70616
+    }
+  ],
+  "promptMessages": [
+    {
+      "id": "672b8adc039d320007ef90d6",
+      "promptID": "672ae92e671f984162a8aa40",
+      "pairID": "672b8adc039d320007ef90d5",
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "User's last response:"
+            ]
+          },
+          {
+            "text": [
+              "What services are offered for users?"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:27:24.000Z"
+    },
+    {
+      "id": "672b8adc039d320007ef90d5",
+      "promptID": "672ae92e671f984162a8aa40",
+      "pairID": "672b8adc039d320007ef90d6",
+      "type": "role",
+      "data": {
+        "role": "agent",
+        "content": [
+          {
+            "text": [
+              "What are the specific details of common processes for users, including relevant terms for users based on specific factors, and potential challenges that users may face when following common processes? Additionally, are there any exceptions or special considerations such as specific circumstances that may impact the user process?"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:27:24.000Z"
+    },
+    {
+      "id": "672b8b4d039d320007ef90e3",
+      "promptID": "672ae92e671f984162a8aa40",
+      "pairID": "672b8b4d039d320007ef90e2",
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "User's last response:\n$\"",
+              {
+                "variableID": "last_utterance"
+              },
+              "\"\n\nNow, take a deep breath and generate a detailed, comprehensive question that targets the most relevant information in the knowledge base, repeating key terms where appropriate and emphasizing the user perspective as specified in their query.\n\nGenerated question:"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:29:17.000Z"
+    },
+    {
+      "id": "672b8b4d039d320007ef90e2",
+      "promptID": "672ae92e671f984162a8aa40",
+      "pairID": "672b8b4d039d320007ef90e3",
+      "type": "role",
+      "data": {
+        "role": "agent",
+        "content": [
+          {
+            "text": [
+              "What are the different services offered specifically for users, including key details, features, and any limitations or exclusions for user service plans? How do these user service plans work within the industry platform, and what should users know about the service when using it through the platform?"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:29:17.000Z"
+    },
+    {
+      "id": "672b8d7c039d320007ef912e",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8d7c039d320007ef912d",
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "Combien coûte votre service ?"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:38:37.000Z"
+    },
+    {
+      "id": "672b8d7c039d320007ef912d",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8d7c039d320007ef912e",
+      "type": "role",
+      "data": {
+        "role": "agent",
+        "content": [
+          {
+            "text": [
+              "{\"language\": \"English\", \"confidence\": \"high\", \"reasoning\": \"The utterance is in clear, grammatically correct English.\"}"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:38:37.000Z"
+    },
+    {
+      "id": "672b8d7e039d320007ef9130",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8d7e039d320007ef912f",
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "¿Cuál es el precio de su servicio?"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:38:39.000Z"
+    },
+    {
+      "id": "672b8d7e039d320007ef912f",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8d7e039d320007ef9130",
+      "type": "role",
+      "data": {
+        "role": "agent",
+        "content": [
+          {
+            "text": [
+              "{\"language\": \"French\", \"confidence\": \"high\", \"reasoning\": \"The utterance is in French, using correct French grammar and vocabulary.\"}"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:38:39.000Z"
+    },
+    {
+      "id": "672b8d80039d320007ef9132",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8d80039d320007ef9131",
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "Hello! Quel est le prix de votre service ?"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:38:40.000Z"
+    },
+    {
+      "id": "672b8d80039d320007ef9131",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8d80039d320007ef9132",
+      "type": "role",
+      "data": {
+        "role": "agent",
+        "content": [
+          {
+            "text": [
+              "{\"language\": \"Spanish\", \"confidence\": \"high\", \"reasoning\": \"The sentence is in Spanish, asking about the price of the service.\"}"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:38:40.000Z"
+    },
+    {
+      "id": "672b8de7039d320007ef913a",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8de7039d320007ef9139",
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "👍"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:40:23.000Z"
+    },
+    {
+      "id": "672b8de7039d320007ef9139",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8de7039d320007ef913a",
+      "type": "role",
+      "data": {
+        "role": "agent",
+        "content": [
+          {
+            "text": [
+              "{\"language\": \"French\", \"confidence\": \"medium\", \"reasoning\": \"While 'Hello' is English, the rest of the sentence is in French, indicating the user is primarily communicating in French.\"}"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:40:23.000Z"
+    },
+    {
+      "id": "672b8dff039d320007ef913f",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8dff039d320007ef913e",
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "What's the キャンセル policy?"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:40:48.000Z"
+    },
+    {
+      "id": "672b8dff039d320007ef913e",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8dff039d320007ef913f",
+      "type": "role",
+      "data": {
+        "role": "agent",
+        "content": [
+          {
+            "text": [
+              "{\"language\": \"unknown\", \"confidence\": \"low\", \"reasoning\": \"The user only used an emoji, which is not specific to any language.\"}"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:40:48.000Z"
+    },
+    {
+      "id": "672b8e11039d320007ef918a",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8e11039d320007ef9189",
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "Now, analyze the following:\n\nLast utterance: $\"",
+              {
+                "variableID": "last_utterance"
+              },
+              "\"\nAgent's last response: $\"",
+              {
+                "variableID": "last_response"
+              },
+              "\"\nPreviously set language: $\"",
+              {
+                "entityID": "66e8821d517bf2228b6c8667"
+              },
+              "\""
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:41:06.000Z"
+    },
+    {
+      "id": "672b8e11039d320007ef9189",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": "672b8e11039d320007ef918a",
+      "type": "role",
+      "data": {
+        "role": "agent",
+        "content": [
+          {
+            "text": [
+              " {\"language\": \"English\", \"confidence\": \"medium\", \"reasoning\": \"The sentence structure is English, but it includes a Japanese word. The primary language appears to be English with some Japanese vocabulary.\"}"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:41:06.000Z"
+    },
+    {
+      "id": "674f382ca4f2504f702d3521",
+      "promptID": "674f382ca4f2504f702d3520",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              ""
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T16:56:13.000Z"
+    },
+    {
+      "id": "674f382ca4f2504f702d3522",
+      "promptID": "674f382ca4f2504f702d3520",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              ""
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T16:56:13.000Z"
+    },
+    {
+      "id": "674f3b84a4f2504f702d3587",
+      "promptID": "674f3b84a4f2504f702d3586",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              ""
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T17:10:28.000Z"
+    },
+    {
+      "id": "674f3c30a43a5f88550f697a",
+      "promptID": "674f3b84a4f2504f702d3586",
+      "pairID": null,
+      "type": "variable",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              {
+                "variableID": "vf_memory"
+              }
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T17:13:20.000Z"
+    },
+    {
+      "id": "674f3ce3a4f2504f702d3670",
+      "promptID": "674f3ce3a4f2504f702d366f",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              ""
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T17:16:19.000Z"
+    },
+    {
+      "id": "674f3e0da4f2504f702d3674",
+      "promptID": "674f3e0da4f2504f702d3673",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              ""
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T17:21:18.000Z"
+    },
+    {
+      "id": "672ae8ad671f984162a8aa35",
+      "promptID": "672ae8ad671f984162a8aa34",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              "You are a customer support bot that tries to help the user. Guide them towards asking for support."
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:55:25.000Z"
+    },
+    {
+      "id": "672ae8ad671f984162a8aa36",
+      "promptID": "672ae8ad671f984162a8aa34",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "Speak directly to the end customer. Do not include anything outside of your answer. Ensure that you speak to users in the language identied below:\n\nlanguage: ",
+              {
+                "entityID": "66e8821d517bf2228b6c8667"
+              },
+              " "
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:55:25.000Z"
+    },
+    {
+      "id": "672ae8f2671f984162a8aa38",
+      "promptID": "672ae8f2671f984162a8aa37",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              "You are an AI customer support agent."
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:56:35.000Z"
+    },
+    {
+      "id": "672ae903671f984162a8aa3b",
+      "promptID": "672ae903671f984162a8aa3a",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              "You are an expert AI assistant trained to analyze customer inquiries and determine if they require clarification. Your role is to ensure efficient and accurate responses by identifying when additional information is needed from the customer."
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:56:51.000Z"
+    },
+    {
+      "id": "672b8c1f88690850a004469b",
+      "promptID": "672ae92e671f984162a8aa40",
+      "pairID": null,
+      "type": "variable",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              {
+                "variableID": "vf_memory"
+              }
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:32:47.000Z"
+    },
+    {
+      "id": "672b917c88690850a0044a49",
+      "promptID": "672ae8f2671f984162a8aa37",
+      "pairID": null,
+      "type": "variable",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              {
+                "variableID": "vf_memory"
+              }
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T15:55:41.000Z"
+    },
+    {
+      "id": "672ae903671f984162a8aa3c",
+      "promptID": "672ae903671f984162a8aa3a",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "# Clarification Assessment Prompt Template\n\nYou are an expert AI assistant trained to analyze customer inquiries and determine if they require clarification. Your role is to ensure efficient and accurate responses by identifying when additional information is needed from the customer.\n\n## Instructions:\n1. Carefully analyze the 'user's question' for specific details such as product or service types, policy names, or other relevant specifics that provide clear context.\n2. Review the 'chunks' to see if they contain information that directly addresses the specific details in the user's question.\n3. Output '~' if:\n   - The user's question contains specific details that are clearly addressed in the 'chunks'.\n   - The query aligns well with a specific part of the 'chunks' that provides a comprehensive answer.\n4. Output '#' only if:\n   - The query is genuinely broad or vague, lacking specific details that would allow for a direct answer from the 'chunks'.\n   - The 'chunks' contain multiple categories or types of information that could potentially answer the question, but the user's intent is unclear.\n   - There's a crucial piece of information missing from the user's question that is necessary to provide an accurate answer, and this information is not implied or obvious from the context given.\n5. If outputting '#', specify the type of information or category that would help better address their question, based on the 'chunks'.\n\n## Output format:\n[Decision: '~' or '#', (if '#') then clarification is required. Specify the type of information or category that would help better address their question.]\n\n## Important:\n- Focus on whether the available information in the chunks is sufficient to answer the user's specific question accurately.\n- Consider whether the user's question is too broad or vague to be answered comprehensively with the information provided in the chunks.\n- Assess if there are multiple possible interpretations of the user's question that would lead to significantly different answers based on the information in the chunks.\n\n## Input data:\n1. User's question: \n",
+              {
+                "variableID": "last_utterance"
+              },
+              "\n\n  2. Chunks: \n",
+              {
+                "variableID": "chunks"
+              },
+              "\n\nNow, take a deep breath and provide your assessment based on the instructions above."
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:56:51.000Z"
+    },
+    {
+      "id": "672ae92e671f984162a8aa41",
+      "promptID": "672ae92e671f984162a8aa40",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              "You are a question optimizer. Keep your questions down to one sentence"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:57:34.000Z"
+    },
+    {
+      "id": "672ae92e671f984162a8aa42",
+      "promptID": "672ae92e671f984162a8aa40",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "You are an AI assistant specialized in generating optimal questions for retrieval augmented generation (RAG) in the context of user queries and intent. Your goal is to create a detailed question that will yield the most relevant and useful information from a knowledge base to enhance the quality of responses to user queries.\n\n##Task\n\nGenerate a single, comprehensive question that best captures the information needed to address the user’s query or intent, considering the following guidelines:\n\n\t1.\tAnalyze the user’s last response and the conversation history to identify the core topic, intent, or information need.\n\t2.\tCraft a question that is:\n\t•\tHighly specific and detailed, targeting exact information in the knowledge base\n\t•\tComprehensive, covering multiple aspects of the topic mentioned by the user\n\t•\tPhrased naturally, but including key terms multiple times for emphasis\n\t•\tFocused strongly on the user’s perspective if specified in the conversation\n\t3.\tInclude relevant keywords and phrases throughout the question, repeating important terms where appropriate. Use specific phrasing that emphasizes the user perspective.\n\t4.\tStructure the question to cover multiple related aspects, using phrases like “including”, “as well as”, or “such as”.\n\t5.\tIncorporate specific terms that are likely to appear in relevant documents.\n\t6.\tUse repetitive but varied phrasing to emphasize key points and increase the likelihood of matching relevant documents.\n\t7.\tFor policy-related questions, mention potential exceptions or special circumstances only if they were part of the user’s query.\n\t8.\tFocus solely on the aspects mentioned by the user. Do not include additional topics or comparisons unless specifically requested.\n\n\n##Output\n\nProvide only the generated question, without quotation marks or any additional text.\n\n## Input Data\n"
+            ]
+          },
+          {
+            "text": [
+              "User's last response:"
+            ]
+          },
+          {
+            "text": [
+              "How do common processes work for users?"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:57:34.000Z"
+    },
+    {
+      "id": "672ae94c671f984162a8aa44",
+      "promptID": "672ae94c671f984162a8aa43",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              "You are an AI Support Agent. Your task is to create a brief, friendly clarifying question that fits naturally into an ongoing conversation. "
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:58:05.000Z"
+    },
+    {
+      "id": "672ae94c671f984162a8aa45",
+      "promptID": "672ae94c671f984162a8aa43",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "You are an AI Support Agent. Your task is to create a brief, friendly clarifying question that fits naturally into an ongoing conversation. You will be given the following data: 'guidelines for the question', the 'user's question' that needs a response, and the 'information retrieved from a knowledge base'.\n\n## Instructions:\n1. Analyze the user's question and the provided information.\n2. Identify the key ambiguity or missing detail in the user's query.\n3. Construct a single, clear, and concise clarifying question related to providing support.\n4. Use a friendly tone, but prioritize brevity and directness.\n5. You may use one appropriate emoji if it adds value without increasing length significantly.\n6. Guide the user towards a precise response.\n7. Avoid multiple questions or unnecessary explanations.\n8. Focus on the single most important aspect that requires clarification.\n9. Begin with a very brief acknowledgment, then ask your clarifying question.\n10. Aim for a total response length of 15-20 words maximum.\n\n## Example Responses:\n- \"Sure. Are you a  guest or host? The cancellation process differs for each.\"\n- \"Uh-huh, okay. Can you tell me which  plan are you asking about?\"\n- \"Sure. And is this for a domestic or international  rental? \"\n\n## Input data:\nGuidelines for the question: $\"",
+              {
+                "entityID": "66e8813c517bf2228b6c8665"
+              },
+              "\"\n \nThe user's question: $\"",
+              {
+                "variableID": "last_utterance"
+              },
+              "\"\n Information from knowledge base: $\"",
+              {
+                "variableID": "chunks"
+              },
+              "\"\nThe user's language: $\"",
+              {
+                "entityID": "66e8821d517bf2228b6c8667"
+              },
+              "\"\n \nNow, create your brief, friendly clarifying question in the user's language that fits naturally into the ongoing dialogue:"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:58:05.000Z"
+    },
+    {
+      "id": "672ae961671f984162a8aa47",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "system",
+        "content": [
+          {
+            "text": [
+              "You are a language classifier"
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:58:26.000Z"
+    },
+    {
+      "id": "672ae961671f984162a8aa48",
+      "promptID": "672ae961671f984162a8aa46",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "Analyze the conversation history and the last utterance from a user to determine their likely language. Consider the previously determined language, if available.\n\nClassify the user's language into a specific language name (e.g., English, French, Spanish) or \"unknown\" if the language cannot be determined.\n\nRespond with a JSON string containing the classification, confidence level (high, medium, or low), and a brief explanation of your reasoning. \n\nJSON structure format:\n\n{\n  \"language\": string,\n  \"confidence\": string,\n  \"reasoning\": string\n}\n\n\nExample:\n\nUser: \"How much does it cost to use your service?\""
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:58:26.000Z"
+    },
+    {
+      "id": "672ae8f2671f984162a8aa39",
+      "promptID": "672ae8f2671f984162a8aa37",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "You are an AI customer support bot helping a customer with their question. When communicating with guests, follow these guidelines:\n\nUse the following step-by-step reasoning.\n\n1. Extraction: Extract the relevant information from 'chunks' that directly addresses 'last_utterance'.\n\n2. Response Formatting: (THIS STEP IS VERY IMPORTANT) For questions that require a process or a sequence of actions (like opening an account, applying for a service, etc.), structure the response in a clear, step-by-step guide with each step distinctly numbered. For other types of questions, provide a concise and direct answer.\n\n3. Markdown Syntax: Use Markdown syntax for rich text formatting to enhance readability. For process-oriented responses, use a numbered list format. For other responses, format appropriately to ensure clarity and accessibility, following WCAG 2.1 guidelines.\n\n5. Verification: Ensure that the response strictly contains information from 'chunks' and is directly relevant to 'last_utterance'. Do not incorporate any additional or external information.\n\n6. Conciseness and Clarity: Summarize the information briefly yet clearly, providing only the necessary details to resolve the user's query.\n\nAdditional Instructions:\n\nDo not include links to URLs or information not present in 'chunks'.\nMaintain a friendly, conversational tone, using \"I\" and \"we\" to foster a connection with the user.\n\nSpecifically, emphasize the step-by-step format for any instructional or process-related queries.\n\nInput data:\n1. Customers question: \"",
+              {
+                "variableID": "last_utterance"
+              },
+              "\"\n2. Provided details: \"",
+              {
+                "variableID": "chunks"
+              },
+              "\"\n3. User's language: \"",
+              {
+                "entityID": "66e8821d517bf2228b6c8667"
+              },
+              "\"  (if unknown default to English)"
+            ]
+          },
+          {
+            "text": [
+              "4. Customer's name: ",
+              {
+                "variableID": "674f380aa43a5f88550f6307"
+              },
+              "  and ",
+              {
+                "variableID": "674f3817a43a5f88550f6317"
+              },
+              " \n\nNow, take a deep breath and respond to the guest's question in their language (",
+              {
+                "entityID": "66e8821d517bf2228b6c8667"
+              },
+              "),  or in English if the language is unknown. Remember to follow all the guidelines provided above. "
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-11-06T03:56:35.000Z"
+    },
+    {
+      "id": "674f3b84a4f2504f702d3588",
+      "promptID": "674f3b84a4f2504f702d3586",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "Help the user reflect on their day. Be supportive and understanding and ask thoughtful follow up questions. The users previous question was ",
+              {
+                "variableID": "last_utterance"
+              },
+              " "
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T17:10:28.000Z"
+    },
+    {
+      "id": "674f3ceea43a5f88550f6c90",
+      "promptID": "674f3ce3a4f2504f702d366f",
+      "pairID": null,
+      "type": "variable",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              {
+                "variableID": "vf_memory"
+              }
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T17:16:30.000Z"
+    },
+    {
+      "id": "674f3e0da4f2504f702d3675",
+      "promptID": "674f3e0da4f2504f702d3673",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "Clean up an idea a user provided. Remove prefixes like \"I have an idea\", \"My idea is\", \"Idea\". Here is the idea: ",
+              {
+                "variableID": "674f3e1ba43a5f88550f6e22"
+              },
+              " "
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T17:21:18.000Z"
+    },
+    {
+      "id": "674f3ce3a4f2504f702d3671",
+      "promptID": "674f3ce3a4f2504f702d366f",
+      "pairID": null,
+      "type": "role",
+      "data": {
+        "role": "user",
+        "content": [
+          {
+            "text": [
+              "Help the user brainstorm ideas. Be supportive and understanding and ask thoughtful follow up questions. The users previous question was ",
+              {
+                "variableID": "last_utterance"
+              },
+              " "
+            ]
+          }
+        ]
+      },
+      "createdAt": "2024-12-03T17:16:19.000Z"
+    }
+  ],
+  "events": [],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "project": {
+    "type": "chat",
+    "name": "03_03",
+    "image": "https://cm4-production-assets.s3.amazonaws.com/1729190521409-square-onyx-1024.jpg",
+    "teamID": "Kljxxp38jN",
+    "members": [],
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 70616,
+    "updatedBy": 70616,
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "apiPrivacy": "public",
+    "_id": "674f51eea43a5f88550f8170",
+    "updatedAt": "2024-12-03T19:55:24.895Z",
+    "devVersion": "674f51eea43a5f88550f8171",
+    "liveVersion": "674f51eea43a5f88550f8172"
+  },
+  "_version": "1.2",
+  "secrets": [],
+  "variableStates": []
+}

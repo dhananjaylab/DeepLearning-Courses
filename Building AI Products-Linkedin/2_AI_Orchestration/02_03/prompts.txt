@@ -1,0 +1,3 @@
+Generate a list of 3 ideas for a charity event. Be concise.
+
+Using the following ideas, IDEAS generate an email for a charity fundraiser.
