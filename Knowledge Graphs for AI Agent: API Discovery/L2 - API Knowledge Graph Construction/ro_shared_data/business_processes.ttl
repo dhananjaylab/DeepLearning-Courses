@@ -1,0 +1,197 @@
+PREFIX pr: <http://example.org/process#>
+
+[
+        a pr:Process ;
+        pr:name "Procurement of Direct Materials" ;
+        pr:description "Process of purchase orders including purchase requisition" ;
+        pr:version "1.0" ;
+        pr:start [
+            a pr:Activity ;
+            pr:name "Create Purchase Requisition" ;
+            pr:description "Create Purchase Requisition" ;
+            pr:entitySet <http://data.example.org/Service/API_PURCHASEREQUISITION_2/EntitySet/PURCHASEREQN> ;
+            pr:hasNext [
+                a pr:Activity ;
+                pr:name "Create Purchase Order" ;
+                pr:description "Create Purchase Order" ;
+                pr:entitySet <http://data.example.org/Service/API_PURCHASEORDER_2/EntitySet/PURCHASEORDER> ;
+                pr:hasNext [
+                    a pr:Activity ;
+                    pr:name "Close Purchase Order" ;
+                    pr:description "Close Purchase Order" ;
+            ]
+            ]
+        ]
+] .
+
+
+[
+    a pr:Process ;
+    pr:name "Sell from Stock" ;
+    pr:description "Process of managing sales orders including items and pricing elements" ;
+    pr:version "1.0" ;
+    pr:start [
+        a pr:Activity ;
+        pr:name "Create Sales Order" ;
+        pr:description "Create a new Sales Order" ;
+        pr:entitySet <http://data.example.org/Service/API_SALESORDER/EntitySet/SALESORDER> ;
+        pr:hasNext [
+            a pr:Activity ;
+            pr:name "Add Sales Order Item" ;
+            pr:description "Add items to the Sales Order" ;
+            pr:entitySet <http://data.example.org/Service/API_SALESORDER/EntitySet/SALESORDERITEM> ;
+            pr:hasNext [
+                a pr:Activity ;
+                pr:name "Define Sales Order Item Pricing Elements" ;
+                pr:description "Add pricing elements to Sales Order items" ;
+                pr:entitySet <http://data.example.org/Service/API_SALESORDER/EntitySet/SALESORDERITEMPRICINGELEMENT> ;
+            ]
+        ]
+    ]
+] .
+
+[
+    a pr:Process ;
+    pr:name "External Transportation Planning" ;
+    pr:description "Process of managing freight orders including items and events" ;
+    pr:version "1.0" ;
+    pr:start [
+        a pr:Activity ;
+        pr:name "Create Freight Order" ;
+        pr:description "Create a new Freight Order" ;
+        pr:entitySet <http://data.example.org/Service/API_FREIGHTORDER/EntitySet/FREIGHTORDER> ;
+        pr:hasNext [
+            a pr:Activity ;
+            pr:name "Add Freight Order Item" ;
+            pr:description "Add items to the Freight Order" ;
+            pr:entitySet <http://data.example.org/Service/API_FREIGHTORDER/EntitySet/FREIGHTORDERITEM> ;
+            pr:hasNext [
+                a pr:Activity ;
+                pr:name "Record Freight Order Events" ;
+                pr:description "Record events related to Freight Order items" ;
+                pr:entitySet <http://data.example.org/Service/API_FREIGHTORDER/EntitySet/FREIGHTORDEREVENT> ;
+            ]
+        ]
+    ]
+] .
+
+[
+    a pr:Process ;
+    pr:name "Service Contract Management" ;
+    pr:description "Process of managing the lifecycle of service contracts including items and notes" ;
+    pr:version "1.0" ;
+    pr:start [
+        a pr:Activity ;
+        pr:name "Create Service Contract" ;
+        pr:description "Create a new Service Contract" ;
+        pr:entitySet <http://data.example.org/Service/API_SERVICECONTRACT/EntitySet/SERVICECONTRACT> ;
+        pr:hasNext [
+            a pr:Activity ;
+            pr:name "Add Service Contract Item" ;
+            pr:description "Add items to the Service Contract" ;
+            pr:entitySet <http://data.example.org/Service/API_SERVICECONTRACT/EntitySet/SERVICECONTRACTITEM> ;
+        ]
+    ]
+] .
+
+[
+    a pr:Process ;
+    pr:name "Customer Returns with Direct Shipment from Customer to Supplier" ;
+    pr:description "Process of handling customer returns and inspections along with cause identification" ;
+    pr:version "1.0" ;
+    pr:start [
+        a pr:Activity ;
+        pr:name "Initiate Customer Return" ;
+        pr:description "Process a new Customer Return" ;
+        pr:entitySet <http://data.example.org/Service/API_CUSTOMERRETURN/EntitySet/CUSTOMERRETURN> ;
+        pr:hasNext [
+            a pr:Activity ;
+            pr:name "Perform Returns Inspection" ;
+            pr:description "Inspect returned items for quality issues" ;
+            pr:entitySet <http://data.example.org/Service/API_RETURNSINSPECTION_2/EntitySet/RETURNSINSPECTION> ;
+            pr:hasNext [
+                a pr:Activity ;
+                pr:name "Identify Cause of Issues" ;
+                pr:description "Identify the cause of issues in returned items" ;
+                pr:entitySet <http://data.example.org/Service/API_QUALITYNOTIFICATION/EntitySet/QUALITYNOTIFICATIONITEMCAUSE> ;
+            ]
+        ]
+    ]
+] .
+
+
+[
+    a pr:Process ;
+    pr:name "Warehouse Inbound Processing" ;
+    pr:description "Process of managing warehouse tasks and orders along with resource allocation" ;
+    pr:version "1.0" ;
+    pr:start [
+        a pr:Activity ;
+        pr:name "Create Warehouse Order" ;
+        pr:description "Create a new Warehouse Order" ;
+        pr:entitySet <http://data.example.org/Service/API_WAREHOUSE_ORDER_TASK_2/EntitySet/WAREHOUSEORDER> ;
+        pr:hasNext [
+            a pr:Activity ;
+            pr:name "Execute Warehouse Task" ;
+            pr:description "Execute tasks related to the Warehouse Order" ;
+            pr:entitySet <http://data.example.org/Service/API_WAREHOUSE_ORDER_TASK_2/EntitySet/WAREHOUSETASK> ;
+            pr:hasNext [
+                a pr:Activity ;
+                pr:name "Allocate Warehouse Resources" ;
+                pr:description "Allocate resources for warehouse tasks" ;
+                pr:entitySet <http://data.example.org/Service/API_WAREHOUSE_RESOURCE_2/EntitySet/WAREHOUSERESOURCE> ;
+            ]
+        ]
+    ]
+] .
+
+
+[
+    a pr:Process ;
+    pr:name "Project Billing – Project-Based Services" ;
+    pr:description "Process of managing project billing requests and handling written-off items" ;
+    pr:version "1.0" ;
+    pr:start [
+        a pr:Activity ;
+        pr:name "Create Project Billing Request" ;
+        pr:description "Create a new Project Billing Request" ;
+        pr:entitySet <http://data.example.org/Service/API_PROJECTBILLINGREQUEST/EntitySet/PROJECTBILLINGREQUEST> ;
+        pr:hasNext [
+            a pr:Activity ;
+            pr:name "Itemize Project Billing Request" ;
+            pr:description "Add items to the Project Billing Request" ;
+            pr:entitySet <http://data.example.org/Service/API_PROJECTBILLINGREQUEST/EntitySet/PROJECTBILLINGREQUESTITEM> ;
+            pr:hasNext [
+                a pr:Activity ;
+                pr:name "Handle Written-off Billing Items" ;
+                pr:description "Manage written-off items for the billing request" ;
+                pr:entitySet <http://data.example.org/Service/API_PROJECTBILLINGREQUEST/EntitySet/WRITTENOFFPROJECTBILLGELMENTRY> ;
+            ]
+        ]
+    ]
+] .
+
+[
+    a pr:Process ;
+    pr:name "Inbound Delivery Management" ;
+    pr:description "Process of managing inbound deliveries including items and serial numbers" ;
+    pr:version "1.0" ;
+    pr:start [
+        a pr:Activity ;
+        pr:name "Create Inbound Delivery Head" ;
+        pr:description "Create a new inbound delivery head" ;
+        pr:entitySet <http://data.example.org/Service/API_WHSE_INB_DELIVERY_2/EntitySet/WHSEINBOUNDDELIVERYHEAD> ;
+        pr:hasNext [
+            a pr:Activity ;
+            pr:name "Add Inbound Delivery Items" ;
+            pr:description "Add items to the inbound delivery" ;
+            pr:entitySet <http://data.example.org/Service/API_WHSE_INB_DELIVERY_2/EntitySet/WHSEINBOUNDDELIVERYITEM> ;
+            pr:hasNext [
+                a pr:Activity ;
+                pr:name "Track Inbound Delivery Item Serial Numbers" ;
+                pr:description "Track serial numbers of inbound delivery items" ;
+                pr:entitySet <http://data.example.org/Service/API_WHSE_INB_DELIVERY_2/EntitySet/WHSEINBDELIVITEMSERIALNUMBER> ;
+            ]
+        ]
+    ]
+] .
