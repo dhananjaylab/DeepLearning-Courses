@@ -1,0 +1,40 @@
+name,version,description
+API_PURCHASEORDER_2,4.0,OData service for Purchase Order
+API_CNSLDTNFSITEMHIERARCHY,4.0,Consolidation FS Item Hierarchy
+API_CNSLDTNPLANT,4.0,Consolidation Plant
+API_WAREHOUSE_ORDER_TASK_2,4.0,API service for Warehouse Order/ Warehouse Task
+API_FREIGHTORDER,4.0,Freight Order
+API_PLANNEDORDER,4.0,OData Service for Planned Order API
+API_PROJECTBILLINGREQUEST,4.0,OData service for Project Billg Request
+API_CUSTOMERRETURN,4.01,Customer Return OData V4
+API_RE_SPACEGROUPTYPE,4.0,Real Estate Space Group Type
+API_WRKCTRPOOLEDCAPACITY,4.0,OData Service for Work Center Pooled Capacity API
+API_QUALITYNOTIFICATION,4.0,Quality Notification
+API_MEASURINGPOINT,4.0,Service Definition for Measuring Point ODATA
+API_BILLINGDOCUMENTREQUEST,4.0,OData Service for Billing Document Request
+API_CABUSPARTPAYMENT,4.0,Contr Acctg Business Partner Payment
+API_CNTRLREQFORQUOTATION,4.0,ODATA API for Central Request For Quotation
+API_RFM_ASSORTMENT_MODULE,4.0,API for Assortment Module Management
+BR_CTR_SERVICE_O4,4.0,BR CTR Service
+API_WHSE_INB_DELIVERY_2,4.0,Service for Warehouse Inbound Delivery
+API_PRAWELLCOMPLETIONDOWNTIME,4.0,PRA Well Completion Down Time
+API_FREIGHTBOOKING,4.0,Freight Booking
+API_RETAILPROMOTION,4.0,Retail Promotion
+API_ENTPROJECTPROFILECODE,4.0,Service Binding for Project Profile Code
+API_SERVICECONTRACT,4.0,Service Contract
+API_RETURNSINSPECTION_2,4.0,Define Service for Returns Inspection
+API_CNSLDTNGROUPSTRUCTURE,4.0,Consolidation Group Structure
+API_BILLINGDOCUMENT,4.0,OData Service for Billing Document
+API_PRODUCT_AVAILY_INFO,4.0,Product Availability Info Service
+API_SRVCCANCELLATIONREASON,4.0,Service Cancellation Reason
+API_WAREHOUSE_2,4.0,API service for Warehouse
+API_CNSLDTNCUSTOMER,4.0,Consolidation Customer
+API_CNSLDTNMATERIALGROUP,4.0,Consolidation Material Group
+API_PAYROLLEARMARKEDFUNDSDOC,4.0,Manage Payroll Earmarked Funds Document
+API_PURCHASEREQUISITION_2,4.0,ODATA Service for Purchase Requisition API
+API_SALESORDER,4.01,Sales Order OData V4
+API_WAREHOUSE_RESOURCE_2,4.0,API service for Warehouse Resource
+API_CONSOLIDATIONTASK,4.0,Consolidation Task
+API_WORK_CENTER,4.0,OData Service for Work Center API
+API_PRAINTERNALMARKETING,4.0,Maintain PRA Internal Marketing Rate
+API_SUPPLIERQUOTATION_2,4.0,ODATA service for Supplier Quotation
